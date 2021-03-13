@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="remove unused imports">
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="bug fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
       <updated>1615627815113</updated>
       <workItem from="1615627827857" duration="836000" />
       <workItem from="1615629114295" duration="733000" />
-      <workItem from="1615630811428" duration="1345000" />
+      <workItem from="1615630811428" duration="2469000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for artorito">
       <created>1615628590091</created>
@@ -94,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615631852724</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add react router">
+      <created>1615632182972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615632182972</updated>
+    </task>
+    <task id="LOCAL-00009" summary="bug fix">
+      <created>1615632316979</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615632316979</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +137,8 @@
     <MESSAGE value="remove unused things" />
     <MESSAGE value="install react router" />
     <MESSAGE value="remove unused imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unused imports" />
+    <MESSAGE value="add react router" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
 </project>
