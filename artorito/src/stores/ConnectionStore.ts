@@ -8,6 +8,18 @@ interface ConnectionStore extends State {
 
 export const useConnectionStore = create<ConnectionStore>(set => ({
     status: false,
-    connected: () => {set(state => ({status: true}))},
-    disconnected: () => {set(state => ({status: false}))}
+    connected: () => {
+        set(() => {
+            return {
+                status: true
+            }
+        })
+    },
+    disconnected: () => {
+        set(() => {
+            return {
+                status: false
+            }
+        })
+    }
 }))
