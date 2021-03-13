@@ -4,14 +4,11 @@ import {Router, Switch} from "react-router-dom";
 
 function App() {
 
-    return (// @ts-ignore
-    <Router>
+    return (
+        <div>
 
-      <Switch>
-
-      </Switch>
-    </Router>
-  );
+        </div>
+    );
 }
 
 export default App;
