@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import ConnectionLost from "./components/ConnectionLost";
 import {useConnectionStore} from "./stores/ConnectionStore";
 import {useTokenStore} from "./stores/TokenStore";
+import Login from "./components/Login";
+import Main from "./Main";
 
 function App() {
 
@@ -13,7 +15,7 @@ function App() {
 
     return (
         <div>
-            <Navbar />
+            {token == '' ? <Login /> : <Main />}
             <ConnectionLost />
         </div>
     );
