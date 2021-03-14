@@ -3,6 +3,7 @@ import {Button, TextField, Typography} from "@material-ui/core";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated} from "react-spring";
 import styles from './login.module.css';
+import Spinner from "./Spinner";
 
 export default function Login() {
     // animations and connection checks
@@ -50,7 +51,9 @@ export default function Login() {
                     onClick={login}
                     variant={"contained"}
                     color={"secondary"}
-                >login</Button>
+                >
+                    {requesting ? <Spinner /> : 'login'}
+                </Button>
             </animated.div>
         </div>
     )
