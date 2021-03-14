@@ -18,7 +18,7 @@ function App() {
             {isLogin(token) ? <Main /> : <Login />}
             <ConnectionLost />
         </div>
-    );
+    )
 }
 
 export default App;

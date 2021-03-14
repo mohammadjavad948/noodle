@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="finished login form">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change direction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
       <workItem from="1615629114295" duration="733000" />
       <workItem from="1615630811428" duration="4122000" />
       <workItem from="1615657467670" duration="3980000" />
-      <workItem from="1615700794091" duration="7190000" />
+      <workItem from="1615700794091" duration="7878000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for artorito">
       <created>1615628590091</created>
@@ -280,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615707195390</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add some thick animation">
+      <created>1615708043847</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1615708043847</updated>
+    </task>
+    <task id="LOCAL-00033" summary="change direction">
+      <created>1615708241734</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1615708241734</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,8 +315,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add icons" />
-    <MESSAGE value="remove unused things" />
     <MESSAGE value="install react router" />
     <MESSAGE value="remove unused imports" />
     <MESSAGE value="add react router" />
@@ -326,6 +338,8 @@
     <MESSAGE value="add some background" />
     <MESSAGE value="basic card for login" />
     <MESSAGE value="finished login form" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished login form" />
+    <MESSAGE value="add some thick animation" />
+    <MESSAGE value="change direction" />
+    <option name="LAST_COMMIT_MESSAGE" value="change direction" />
   </component>
 </project>
