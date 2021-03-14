@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="login finished">
-      <change beforePath="$PROJECT_DIR$/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add router">
       <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
       <workItem from="1615657467670" duration="3980000" />
       <workItem from="1615700794091" duration="8268000" />
       <workItem from="1615713734668" duration="4338000" />
-      <workItem from="1615724462971" duration="1884000" />
+      <workItem from="1615724462971" duration="2235000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for artorito">
       <created>1615628590091</created>
@@ -397,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615727110979</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add router">
+      <created>1615727560484</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1615727560484</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +424,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create token store" />
     <MESSAGE value="finished TokenStore.ts" />
     <MESSAGE value="change name" />
     <MESSAGE value="create login component" />
@@ -443,6 +448,7 @@
     <MESSAGE value="inject spinner into Login.tsx" />
     <MESSAGE value="remove unused import" />
     <MESSAGE value="login finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="login finished" />
+    <MESSAGE value="add router" />
+    <option name="LAST_COMMIT_MESSAGE" value="add router" />
   </component>
 </project>

@@ -1,5 +1,14 @@
 import React from 'react';
-import {AppBar, Avatar, Button, createStyles, makeStyles, Theme, Toolbar, Typography} from "@material-ui/core";
+import {
+    AppBar,
+    Avatar,
+    Button,
+    createStyles, Icon,
+    makeStyles,
+    Theme,
+    Toolbar,
+    Typography
+} from "@material-ui/core";
 import {green} from "@material-ui/core/colors";
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -24,6 +33,11 @@ function Navbar(){
                     <Typography variant="h6" className={classes.title}>
                         Noodle
                     </Typography>
+                    <Button>
+                        <Icon>
+                            dashboard
+                        </Icon>
+                    </Button>
                     <Button color="inherit">Logout</Button>
                 </Toolbar>
             </AppBar>
