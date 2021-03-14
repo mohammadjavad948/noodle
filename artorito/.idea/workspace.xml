@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="removed router" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="create token store">
+      <change beforePath="$PROJECT_DIR$/src/stores/TokenStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/TokenStore.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +12,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -53,7 +55,7 @@
       <workItem from="1615629114295" duration="733000" />
       <workItem from="1615630811428" duration="4122000" />
       <workItem from="1615657467670" duration="3980000" />
-      <workItem from="1615700794091" duration="1456000" />
+      <workItem from="1615700794091" duration="1770000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for artorito">
       <created>1615628590091</created>
@@ -202,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615702038145</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="create token store">
+      <created>1615702296434</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615702296434</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +250,7 @@
     <MESSAGE value="add extra style" />
     <MESSAGE value="remove unused state" />
     <MESSAGE value="removed router" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed router" />
+    <MESSAGE value="create token store" />
+    <option name="LAST_COMMIT_MESSAGE" value="create token store" />
   </component>
 </project>
