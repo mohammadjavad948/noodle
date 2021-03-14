@@ -1,6 +1,7 @@
 import React from "react";
-import {BrowserRouter, Switch} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Dashboard from "./Dashboard";
 
 export default function Main() {
     return (
@@ -9,7 +10,9 @@ export default function Main() {
 
             <div className="container">
                 <Switch>
-
+                    <Route path="/">
+                        <Dashboard />
+                    </Route>
                 </Switch>
             </div>
         </BrowserRouter>
