@@ -1,5 +1,5 @@
 import React from "react";
-import {makeStyles} from "@material-ui/core";
+import {Button, makeStyles, TextField, Typography} from "@material-ui/core";
 
 const useStyles = makeStyles({
     main: {
@@ -19,7 +19,12 @@ const useStyles = makeStyles({
         width: '100%',
         height: '300px',
         background: '#151515',
-        borderRadius: '8px'
+        borderRadius: '8px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '20px'
     }
 });
 
@@ -28,7 +33,10 @@ export default function Login() {
     return (
         <div className={styles.main}>
             <div className={styles.login}>
-
+                <Typography variant={'h6'}>Welcome</Typography>
+                <TextField label="username" variant={"outlined"}/>
+                <TextField label="password" type="password" variant={"outlined"}/>
+                <Button variant={"contained"} color={"secondary"}>login</Button>
             </div>
         </div>
     )
