@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="create login states">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="create spinner component">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spinner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spinner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/spinner.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/spinner.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
       <workItem from="1615630811428" duration="4122000" />
       <workItem from="1615657467670" duration="3980000" />
       <workItem from="1615700794091" duration="8268000" />
-      <workItem from="1615713734668" duration="2943000" />
+      <workItem from="1615713734668" duration="3576000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for artorito">
       <created>1615628590091</created>
@@ -347,7 +349,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615716235809</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add login logic">
+      <created>1615716944049</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1615716944049</updated>
+    </task>
+    <task id="LOCAL-00042" summary="create spinner component">
+      <created>1615716987468</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1615716987468</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,8 +384,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create connection store" />
-    <MESSAGE value="install react spring" />
     <MESSAGE value="create connection lost component" />
     <MESSAGE value="add extra style" />
     <MESSAGE value="remove unused state" />
@@ -393,6 +407,8 @@
     <MESSAGE value="if connected it say connected" />
     <MESSAGE value="remove unused method" />
     <MESSAGE value="create login states" />
-    <option name="LAST_COMMIT_MESSAGE" value="create login states" />
+    <MESSAGE value="add login logic" />
+    <MESSAGE value="create spinner component" />
+    <option name="LAST_COMMIT_MESSAGE" value="create spinner component" />
   </component>
 </project>

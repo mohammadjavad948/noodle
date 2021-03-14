@@ -1,19 +1,25 @@
 .spinner {
-    margin: 100px auto;
+    display: inline-flex;
     width: 50px;
-    height: 40px;
+    height: 20px;
     text-align: center;
     font-size: 10px;
 }
 
 .spinner > div {
-    background-color: #333;
+    background-color: #e7e7e7;
     height: 100%;
     width: 6px;
     display: inline-block;
 
     -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
     animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+
+.spinner .rect1 {
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
 }
 
 .spinner .rect2 {

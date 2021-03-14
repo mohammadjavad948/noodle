@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, config} from "react-spring";
 import {makeStyles} from "@material-ui/core";
+import Spinner from "./Spinner";
 
 const useStyle = makeStyles({
     main: {
@@ -11,6 +12,9 @@ const useStyle = makeStyles({
         padding: '8px',
         boxShadow: 'black 0 0 3px 0px',
         borderRadius: '5px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '10px'
     }
 })
 
@@ -32,7 +36,8 @@ export default function ConnectionLost(){
 
     return (
         <animated.div className={styles.main} style={animations}>
-            {status ? 'connected :D' : 'connecting to server ...'}
+            {status ? 'connected :D' : 'connecting to server'}
+            {status ? '' : <Spinner/>}
         </animated.div>
     )
 }
