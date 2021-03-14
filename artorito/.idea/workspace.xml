@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="if connected it say connected">
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/TokenStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/TokenStore.ts" afterDir="false" />
-    </list>
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="remove unused method" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +62,7 @@
       <workItem from="1615630811428" duration="4122000" />
       <workItem from="1615657467670" duration="3980000" />
       <workItem from="1615700794091" duration="8268000" />
-      <workItem from="1615713734668" duration="1771000" />
+      <workItem from="1615713734668" duration="2247000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for artorito">
       <created>1615628590091</created>
@@ -333,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615715462304</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="remove unused method">
+      <created>1615715521334</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1615715521334</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +358,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create basic navbar" />
     <MESSAGE value="install zustand" />
     <MESSAGE value="create connection store" />
     <MESSAGE value="install react spring" />
@@ -379,6 +382,7 @@
     <MESSAGE value="remove unused import" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="if connected it say connected" />
-    <option name="LAST_COMMIT_MESSAGE" value="if connected it say connected" />
+    <MESSAGE value="remove unused method" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove unused method" />
   </component>
 </project>
