@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom";
 import {ThemeProvider, createMuiTheme} from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
@@ -15,12 +14,10 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <React.StrictMode>
-      <BrowserRouter>
-          <ThemeProvider theme={theme}>
-              <CssBaseline />
-              <App />
-          </ThemeProvider>
-      </BrowserRouter>
+      <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <App />
+      </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
