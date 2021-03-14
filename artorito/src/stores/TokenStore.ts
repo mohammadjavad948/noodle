@@ -1,11 +1,11 @@
 import create, {State} from "zustand";
 
-interface ConnectionStore extends State {
+interface TokenStore extends State {
     token: string
     set: (token: string) => void
 }
 
-export const useConnectionStore = create<ConnectionStore>(set => ({
+export const useTokenStore = create<TokenStore>(set => ({
     token: localStorage.getItem('token') || "",
     set: (token) => {
 
