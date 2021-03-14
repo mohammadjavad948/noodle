@@ -24,7 +24,7 @@ function Navbar(){
                     <Typography variant="h6" className={classes.title}>
                         Noodle
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button color="inherit">Logout</Button>
                 </Toolbar>
             </AppBar>
         </div>
