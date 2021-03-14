@@ -10,6 +10,7 @@ import {
     Typography
 } from "@material-ui/core";
 import {green} from "@material-ui/core/colors";
+import {useTokenStore} from "../stores/TokenStore";
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
@@ -24,6 +25,11 @@ const useStyles = makeStyles((theme: Theme) =>
 function Navbar(){
 
     const classes = useStyles();
+    const {set: setToken} = useTokenStore();
+
+    function logout(){
+        setToken('');
+    }
 
     return (
         <div className={classes.root}>
@@ -38,7 +44,7 @@ function Navbar(){
                             dashboard
                         </Icon>
                     </Button>
-                    <Button color="inherit">Logout</Button>
+                    <Button color="inherit" onClick={logout}>Logout</Button>
                 </Toolbar>
             </AppBar>
         </div>

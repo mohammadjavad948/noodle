@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add router" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add fade intro">
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,14 +65,7 @@
       <workItem from="1615657467670" duration="3980000" />
       <workItem from="1615700794091" duration="8268000" />
       <workItem from="1615713734668" duration="4338000" />
-      <workItem from="1615724462971" duration="3859000" />
-    </task>
-    <task id="LOCAL-00004" summary="add icons">
-      <created>1615631334005</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1615631334005</updated>
+      <workItem from="1615724462971" duration="4168000" />
     </task>
     <task id="LOCAL-00005" summary="remove unused things">
       <created>1615631722158</created>
@@ -408,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615728829721</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add fade intro">
+      <created>1615729584172</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1615729584173</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +431,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create button component" />
     <MESSAGE value="remove button component" />
     <MESSAGE value="create main component" />
     <MESSAGE value="add some background" />
@@ -454,6 +455,7 @@
     <MESSAGE value="add bootstrap" />
     <MESSAGE value="add bootstrap grid" />
     <MESSAGE value="add router" />
-    <option name="LAST_COMMIT_MESSAGE" value="add router" />
+    <MESSAGE value="add fade intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fade intro" />
   </component>
 </project>

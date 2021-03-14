@@ -36,7 +36,7 @@ export default function Login() {
 
         setTimeout(()=> {
             set({opacity: 0})
-        }, 1500)
+        }, 2500)
         setTimeout(()=> {
             setToken('aefefesf');
         }, 3000)
