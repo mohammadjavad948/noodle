@@ -4,11 +4,13 @@ import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated} from "react-spring";
 import styles from './login.module.css';
 import Spinner from "./Spinner";
+import {useTokenStore} from "../stores/TokenStore";
 
 export default function Login() {
     // animations and connection checks
     const {status: connectionStatus} = useConnectionStore();
-    const [loginProps, set] = useSpring(() => ({x: 0, y: 0}));
+    const {set: setToken} = useTokenStore();
+    const [loginProps, set] = useSpring(() => ({x: 0, y: 0, opacity: 100}));
 
     function Mouse(event: any){
        set({x: event.pageX, y: event.pageY})
@@ -17,7 +19,7 @@ export default function Login() {
     // login logic
     const [requesting, setRequest] = useState(false);
     const [username, setUsername] = useState('')
-    const [passowrd, setPassword] = useState('')
+    const [password, setPassword] = useState('')
 
     function usernameChanged(event: any){
         setUsername(event.target.value);
@@ -26,10 +28,13 @@ export default function Login() {
         setPassword(event.target.value);
     }
     function login(){
-        console.log({username, passowrd});
         setRequest(true);
+
         setTimeout(()=> {
-            setRequest(false);
+            set({opacity: 0})
+        }, 1500)
+        setTimeout(()=> {
+            setToken('aefefesf');
         }, 3000)
     }
 
@@ -41,7 +46,8 @@ export default function Login() {
                     // @ts-ignore
                     marginRight: loginProps.x.interpolate(v => v/10 + 'px'),
                     // @ts-ignore
-                    marginBottom: loginProps.y.interpolate(v => v/10 + 'px')
+                    marginBottom: loginProps.y.interpolate(v => v/10 + 'px'),
+                    opacity: loginProps.opacity.interpolate(v => v + '%')
                 }}>
                 <Typography variant={'h6'}>Welcome</Typography>
                 <TextField label="username" variant={"outlined"} onChange={usernameChanged}/>
