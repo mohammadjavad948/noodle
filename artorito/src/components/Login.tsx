@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Button, TextField, Typography} from "@material-ui/core";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated} from "react-spring";
@@ -10,7 +10,11 @@ export default function Login() {
     // animations and connection checks
     const {status: connectionStatus} = useConnectionStore();
     const {set: setToken} = useTokenStore();
-    const [loginProps, set] = useSpring(() => ({x: 0, y: 0, opacity: 100}));
+    const [loginProps, set] = useSpring(() => ({x: 0, y: 0, opacity: 0}));
+
+    useEffect(() => {
+        set({opacity: 100});
+    }, [])
 
     function Mouse(event: any){
        set({x: event.pageX, y: event.pageY})
