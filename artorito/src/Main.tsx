@@ -8,7 +8,7 @@ export default function Main() {
         <BrowserRouter>
             <Navbar />
 
-            <div className="container">
+            <div className="container mt-2">
                 <Switch>
                     <Route path="/">
                         <Dashboard />
