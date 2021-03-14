@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, makeStyles, TextField, Typography} from "@material-ui/core";
+import {Button, TextField, Typography} from "@material-ui/core";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated} from "react-spring";
 import styles from './login.module.css';
