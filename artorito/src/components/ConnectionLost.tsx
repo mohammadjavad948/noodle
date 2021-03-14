@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, config} from "react-spring";
 import {makeStyles} from "@material-ui/core";
@@ -15,8 +15,14 @@ const useStyle = makeStyles({
 })
 
 export default function ConnectionLost(){
-    const {status} = useConnectionStore();
+    const {status, connected} = useConnectionStore();
     const styles = useStyle();
+
+    useEffect(() => {
+        setTimeout(() => {
+            connected();
+        }, 3000);
+    }, [])
 
     const animations = useSpring({
         bottom: status ? '-100px' : '20px',
@@ -26,7 +32,7 @@ export default function ConnectionLost(){
 
     return (
         <animated.div className={styles.main} style={animations}>
-            connecting to server
+            {status ? 'connected :D' : 'connecting to server ...'}
         </animated.div>
     )
 }
