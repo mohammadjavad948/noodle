@@ -45,9 +45,9 @@ export default function Login() {
                 className={styles.login}
                 style={{
                     // @ts-ignore
-                    marginLeft: loginProps.x.interpolate(v => v/10 + 'px'),
+                    marginRight: loginProps.x.interpolate(v => v/10 + 'px'),
                     // @ts-ignore
-                    marginTop: loginProps.y.interpolate(v => v/10 + 'px')
+                    marginBottom: loginProps.y.interpolate(v => v/10 + 'px')
                 }}>
                 <Typography variant={'h6'}>Welcome</Typography>
                 <TextField label="username" variant={"outlined"}/>
