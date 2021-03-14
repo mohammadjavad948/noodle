@@ -11,11 +11,11 @@ import Main from "./Main";
 
 function App() {
 
-    const {token, isLogin} =  useTokenStore();
+    const {token} =  useTokenStore();
 
     return (
         <div>
-            {isLogin(token) ? <Main /> : <Login />}
+            {token !== '' ? <Main /> : <Login />}
             <ConnectionLost />
         </div>
     )

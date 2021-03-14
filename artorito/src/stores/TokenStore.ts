@@ -3,7 +3,6 @@ import create, {State} from "zustand";
 interface TokenStore extends State {
     token: string
     set: (token: string) => void
-    isLogin: (token: string) => boolean
 }
 
 export const useTokenStore = create<TokenStore>(set => ({
@@ -17,8 +16,5 @@ export const useTokenStore = create<TokenStore>(set => ({
                 token: token
             }
         })
-    },
-    isLogin: (token) => {
-        return token !== ''
     }
 }))
