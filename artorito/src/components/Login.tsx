@@ -18,6 +18,20 @@ export default function Login() {
     const [username, setUsername] = useState('')
     const [passowrd, setPassword] = useState('')
 
+    function usernameChanged(event: any){
+        setUsername(event.target.value);
+    }
+    function passwordChanged(event: any){
+        setPassword(event.target.value);
+    }
+    function login(){
+        console.log({username, passowrd});
+        setRequest(true);
+        setTimeout(()=> {
+            setRequest(false);
+        }, 3000)
+    }
+
     return (
         <div className={styles.main} onMouseMove={Mouse}>
             <animated.div
@@ -29,9 +43,14 @@ export default function Login() {
                     marginBottom: loginProps.y.interpolate(v => v/10 + 'px')
                 }}>
                 <Typography variant={'h6'}>Welcome</Typography>
-                <TextField label="username" variant={"outlined"}/>
-                <TextField label="password" type="password" variant={"outlined"}/>
-                <Button disabled={!connectionStatus && requesting} variant={"contained"} color={"secondary"}>login</Button>
+                <TextField label="username" variant={"outlined"} onChange={usernameChanged}/>
+                <TextField label="password" type="password" variant={"outlined"} onChange={passwordChanged}/>
+                <Button
+                    disabled={!connectionStatus || requesting}
+                    onClick={login}
+                    variant={"contained"}
+                    color={"secondary"}
+                >login</Button>
             </animated.div>
         </div>
     )
