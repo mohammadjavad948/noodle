@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="create connection lost component">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add extra style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/ConnectionStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/ConnectionStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,8 @@
       <workItem from="1615627827857" duration="836000" />
       <workItem from="1615629114295" duration="733000" />
       <workItem from="1615630811428" duration="4122000" />
-      <workItem from="1615657467670" duration="3660000" />
+      <workItem from="1615657467670" duration="3980000" />
+      <workItem from="1615700794091" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit for artorito">
       <created>1615628590091</created>
@@ -171,7 +170,28 @@
       <option name="project" value="LOCAL" />
       <updated>1615659190078</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add extra style">
+      <created>1615661241420</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615661241420</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add extra style">
+      <created>1615661247082</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1615661247082</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add extra style">
+      <created>1615661254131</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615661254131</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +227,7 @@
     <MESSAGE value="create connection store" />
     <MESSAGE value="install react spring" />
     <MESSAGE value="create connection lost component" />
-    <option name="LAST_COMMIT_MESSAGE" value="create connection lost component" />
+    <MESSAGE value="add extra style" />
+    <option name="LAST_COMMIT_MESSAGE" value="add extra style" />
   </component>
 </project>
