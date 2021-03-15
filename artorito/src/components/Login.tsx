@@ -85,7 +85,7 @@ export default function Login() {
                     {requesting ? <Spinner /> : 'login'}
                 </Button>
                 <FormControlLabel
-                    control={<Switch size="small" checked={savedTheme === 'dark'} onChange={changeTheme}/>}
+                    control={<Switch size="small" checked={savedTheme === 'dark'} color={"primary"} onChange={changeTheme}/>}
                     label="dark"
                 />
             </animated.div>
