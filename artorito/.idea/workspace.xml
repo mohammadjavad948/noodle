@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add dark toggle to nav" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change dark mode toggle">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,14 +68,7 @@
       <workItem from="1615713734668" duration="4338000" />
       <workItem from="1615724462971" duration="4241000" />
       <workItem from="1615734779954" duration="4177000" />
-      <workItem from="1615783926288" duration="7404000" />
-    </task>
-    <task id="LOCAL-00020" summary="remove unused state">
-      <created>1615701838815</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1615701838816</updated>
+      <workItem from="1615783926288" duration="8459000" />
     </task>
     <task id="LOCAL-00021" summary="removed router">
       <created>1615702038145</created>
@@ -410,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615792223967</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="change dark mode toggle">
+      <created>1615792761849</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1615792761849</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,7 +434,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="inject spinner into ConnectionLost.tsx" />
     <MESSAGE value="spinner bug fix" />
     <MESSAGE value="inject spinner into Login.tsx" />
     <MESSAGE value="remove unused import" />
@@ -456,6 +458,7 @@
     <MESSAGE value="add dark theme to login" />
     <MESSAGE value="change color" />
     <MESSAGE value="add dark toggle to nav" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dark toggle to nav" />
+    <MESSAGE value="change dark mode toggle" />
+    <option name="LAST_COMMIT_MESSAGE" value="change dark mode toggle" />
   </component>
 </project>
