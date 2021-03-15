@@ -74,6 +74,10 @@ export default function Login() {
                     background: loginProps.background
                 }}>
                 <Typography variant={'h6'}>Welcome</Typography>
+                <FormControlLabel
+                    control={<Switch size="small" checked={savedTheme === 'dark'} color={"primary"} onChange={changeTheme}/>}
+                    label="dark"
+                />
                 <TextField label="username" variant={"outlined"} onChange={usernameChanged}/>
                 <TextField label="password" type="password" variant={"outlined"} onChange={passwordChanged}/>
                 <Button
@@ -84,10 +88,6 @@ export default function Login() {
                 >
                     {requesting ? <Spinner /> : 'login'}
                 </Button>
-                <FormControlLabel
-                    control={<Switch size="small" checked={savedTheme === 'dark'} color={"primary"} onChange={changeTheme}/>}
-                    label="dark"
-                />
             </animated.div>
         </div>
     )

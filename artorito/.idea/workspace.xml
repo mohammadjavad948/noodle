@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change color">
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add dark toggle to nav" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,14 +65,7 @@
       <workItem from="1615713734668" duration="4338000" />
       <workItem from="1615724462971" duration="4241000" />
       <workItem from="1615734779954" duration="4177000" />
-      <workItem from="1615783926288" duration="7085000" />
-    </task>
-    <task id="LOCAL-00019" summary="add extra style">
-      <created>1615661254131</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1615661254131</updated>
+      <workItem from="1615783926288" duration="7404000" />
     </task>
     <task id="LOCAL-00020" summary="remove unused state">
       <created>1615701838815</created>
@@ -412,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615792030201</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="add dark toggle to nav">
+      <created>1615792223967</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1615792223967</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,7 +431,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create spinner component" />
     <MESSAGE value="inject spinner into ConnectionLost.tsx" />
     <MESSAGE value="spinner bug fix" />
     <MESSAGE value="inject spinner into Login.tsx" />
@@ -458,6 +455,7 @@
     <MESSAGE value="add theme provider to app" />
     <MESSAGE value="add dark theme to login" />
     <MESSAGE value="change color" />
-    <option name="LAST_COMMIT_MESSAGE" value="change color" />
+    <MESSAGE value="add dark toggle to nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dark toggle to nav" />
   </component>
 </project>
