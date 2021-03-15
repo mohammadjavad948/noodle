@@ -52,7 +52,6 @@ function DashboardCard(props: DashboardCardI) {
                             display: false
                         },
                         ticks: {
-                            beginAtZero: true,
                             display: false
                         }
                     }],
