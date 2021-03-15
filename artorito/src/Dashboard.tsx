@@ -91,11 +91,11 @@ function DashboardCard(props: DashboardCardI) {
     return (
         <Card variant={"outlined"} className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3">
             <CardContent>
-                <Typography style={{textAlign: 'center', fontSize: '20px'}}>
-                    {props.title}
-                </Typography>
                 <Typography style={{textAlign: 'center', fontSize: '14px', opacity: '60%'}}>
                     {props.description}
+                </Typography>
+                <Typography style={{textAlign: 'center', fontSize: '20px'}}>
+                    {props.title}
                 </Typography>
                 <canvas
                     width={"100%"}
