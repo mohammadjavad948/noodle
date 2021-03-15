@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change dark mode toggle">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add sign up and a bunch of transition">
       <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,14 +68,7 @@
       <workItem from="1615724462971" duration="4241000" />
       <workItem from="1615734779954" duration="4177000" />
       <workItem from="1615783926288" duration="8459000" />
-      <workItem from="1615807206826" duration="3419000" />
-    </task>
-    <task id="LOCAL-00022" summary="create token store">
-      <created>1615702296434</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1615702296434</updated>
+      <workItem from="1615807206826" duration="4436000" />
     </task>
     <task id="LOCAL-00023" summary="finished TokenStore.ts">
       <created>1615702595386</created>
@@ -415,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615807503019</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="add sign up and a bunch of transition">
+      <created>1615811538356</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1615811538356</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +434,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="spinner bug fix" />
     <MESSAGE value="inject spinner into Login.tsx" />
     <MESSAGE value="remove unused import" />
     <MESSAGE value="login finished" />
@@ -461,6 +458,7 @@
     <MESSAGE value="change color" />
     <MESSAGE value="add dark toggle to nav" />
     <MESSAGE value="change dark mode toggle" />
-    <option name="LAST_COMMIT_MESSAGE" value="change dark mode toggle" />
+    <MESSAGE value="add sign up and a bunch of transition" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sign up and a bunch of transition" />
   </component>
 </project>

@@ -125,6 +125,7 @@ function SignUpForm({setAnimation, login, style}){
 export default function Login() {
     // animations and connection checks
     const {theme: savedTheme, light, dark} = useThemeStore();
+    const [page, setPageIndex] = useState(0);
     const [loginProps, set] = useSpring(() => ({
         x: 0,
         y: 0,
@@ -159,30 +160,28 @@ export default function Login() {
         }
     }
 
-    function login(){
-        console.log('login');
-        // @ts-ignore
-        setPage((index) => {
-            console.log(index)
-            return {
-                position: 'absolute',
-                right: index === 1 ? '420px' : '90px'
-            }
-        })
-        set({height: '300px'})
+    function findPosition(page: number, index: number){
+        if (page === 0 && index === 0){
+            return '-420px'
+        }
+        if ((page === 0 && index === 1) || (page === 1 && index === 0)){
+            return '90px'
+        }
+        if (page === 1 && index === 1){
+            return '420px'
+        }
     }
 
-    function signUp(){
-        console.log('sign up')
+    function transition(){
         // @ts-ignore
         setPage((index) => {
-            console.log(index)
             return {
                 position: 'absolute',
-                right: index === 0 ? '420px' : '90px'
+                right: findPosition(page, index)
             }
         })
-        set({height: '420px'})
+        set({height: page === 1 ? '300px' : '400px'});
+        setPageIndex(page === 0 ? 1 : 0)
     }
 
     return (
@@ -201,9 +200,9 @@ export default function Login() {
                 {springs.map((props, i) => {
                     return i === 0 ?
                         // @ts-ignore
-                        <LoginFrom key={i} setAnimation={set} signUp={signUp} style={props}/>
+                        <LoginFrom key={i} setAnimation={set} signUp={transition} style={props}/>
                         // @ts-ignore
-                        : <SignUpForm key={i} setAnimation={set} login={login} style={props}/>
+                        : <SignUpForm key={i} setAnimation={set} login={transition} style={props}/>
                 })}
                 <FormControlLabel
                     control={<Switch size="small" checked={savedTheme === 'dark'} color={"primary"} onChange={changeTheme}/>}
