@@ -1,21 +1,23 @@
 import React, {useEffect, useState} from "react";
-import {Button, TextField, Typography, useTheme} from "@material-ui/core";
+import {Button, FormControlLabel, Switch, TextField, Typography, useTheme} from "@material-ui/core";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated} from "react-spring";
 import styles from './login.module.css';
 import Spinner from "./Spinner";
 import {useTokenStore} from "../stores/TokenStore";
+import {useThemeStore} from "../stores/ThemeStore";
 
 export default function Login() {
     // animations and connection checks
     const {status: connectionStatus} = useConnectionStore();
     const {set: setToken} = useTokenStore();
-    const theme = useTheme();
+    const {theme: savedTheme, light, dark} = useThemeStore();
+
     const [loginProps, set] = useSpring(() => ({
         x: 0,
         y: 0,
         opacity: 0,
-        background: theme.palette.type === 'light' ? '#e9e9e9' : '#151515'
+        background: savedTheme === 'light' ? '#e9e9e9' : '#151515'
     }));
 
     useEffect(() => {
@@ -24,6 +26,17 @@ export default function Login() {
 
     function Mouse(event: any){
        set({x: event.pageX, y: event.pageY})
+    }
+
+    function changeTheme(){
+
+        set({background: savedTheme !== 'light' ? '#e9e9e9' : '#151515'});
+
+        if (savedTheme === 'dark'){
+            light();
+        }else {
+            dark()
+        }
     }
 
     // login logic
@@ -71,6 +84,10 @@ export default function Login() {
                 >
                     {requesting ? <Spinner /> : 'login'}
                 </Button>
+                <FormControlLabel
+                    control={<Switch size="small" checked={savedTheme === 'dark'} onChange={changeTheme}/>}
+                    label="dark"
+                />
             </animated.div>
         </div>
     )
