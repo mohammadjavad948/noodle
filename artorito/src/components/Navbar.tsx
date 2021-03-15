@@ -3,14 +3,15 @@ import {
     AppBar,
     Avatar,
     Button,
-    createStyles, Icon,
-    makeStyles,
+    createStyles, FormControlLabel, Icon,
+    makeStyles, Switch,
     Theme,
     Toolbar,
     Typography
 } from "@material-ui/core";
 import {green} from "@material-ui/core/colors";
 import {useTokenStore} from "../stores/TokenStore";
+import {useThemeStore} from "../stores/ThemeStore";
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
@@ -26,9 +27,18 @@ function Navbar(){
 
     const classes = useStyles();
     const {set: setToken} = useTokenStore();
+    const {theme, dark, light} = useThemeStore();
 
     function logout(){
         setToken('');
+    }
+
+    function changeTheme() {
+        if (theme === 'dark'){
+            light();
+        }else {
+            dark()
+        }
     }
 
     return (
@@ -39,6 +49,10 @@ function Navbar(){
                     <Typography variant="h6" className={classes.title}>
                         Noodle
                     </Typography>
+                    <FormControlLabel
+                        control={<Switch size="small" checked={theme === 'dark'} color={"primary"} onChange={changeTheme}/>}
+                        label="dark"
+                    />
                     <Button>
                         <Icon>
                             dashboard
