@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add theme support for login">
-      <change beforePath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add theme support for ConnectionLost.tsx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,14 +65,7 @@
       <workItem from="1615713734668" duration="4338000" />
       <workItem from="1615724462971" duration="4241000" />
       <workItem from="1615734779954" duration="4177000" />
-      <workItem from="1615783926288" duration="5696000" />
-    </task>
-    <task id="LOCAL-00014" summary="create connection store">
-      <created>1615658750572</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1615658750572</updated>
+      <workItem from="1615783926288" duration="6079000" />
     </task>
     <task id="LOCAL-00015" summary="install react spring">
       <created>1615658860417</created>
@@ -413,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615790585401</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="add theme support for ConnectionLost.tsx">
+      <created>1615790966608</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1615790966608</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +431,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="bug fix" />
     <MESSAGE value="if connected it say connected" />
     <MESSAGE value="remove unused method" />
     <MESSAGE value="create login states" />
@@ -459,6 +455,7 @@
     <MESSAGE value="change order" />
     <MESSAGE value="removed beginAtZero" />
     <MESSAGE value="add theme support for login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add theme support for login" />
+    <MESSAGE value="add theme support for ConnectionLost.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add theme support for ConnectionLost.tsx" />
   </component>
 </project>
