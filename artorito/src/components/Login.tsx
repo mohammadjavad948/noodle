@@ -97,7 +97,7 @@ function SignUpForm({setAnimation, login, style}){
 
     return (
         <animated.div style={style} className={styles.loginForm}>
-            <Typography variant={'h6'}>Welcome</Typography>
+            <Typography variant={'h6'}>Hi!</Typography>
             <TextField label="name" variant={"outlined"} onChange={nameChanged}/>
             <TextField label="username" variant={"outlined"} onChange={usernameChanged}/>
             <TextField label="password" type="password" variant={"outlined"} onChange={passwordChanged}/>
