@@ -41,6 +41,7 @@ function DashboardCard(props: DashboardCardI) {
                 datasets: [{
                     label: props.title,
                     fill: false,
+                    borderColor: getRandomColor(),
                     data: [50, 80, 20, 30, 100]
                 }]
             },
@@ -66,6 +67,15 @@ function DashboardCard(props: DashboardCardI) {
                 }
             }
         })
+    }
+
+    function getRandomColor(): string {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
     }
 
     return (
