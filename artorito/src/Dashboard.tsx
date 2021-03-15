@@ -6,7 +6,7 @@ export default function Dashboard() {
 
     return (
         <div className="row">
-            <DashboardCard title="Quiz" description="View All Quizzes" link="/quiz"/>
+            <DashboardCard title="Quiz" description="View All Quizzes"/>
         </div>
     )
 }
@@ -14,7 +14,6 @@ export default function Dashboard() {
 interface DashboardCardI {
     title: string
     description: string
-    link: string
 }
 
 function DashboardCard(props: DashboardCardI) {
@@ -28,11 +27,6 @@ function DashboardCard(props: DashboardCardI) {
                     {props.description}
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button component={Link} to={props.link}>
-                    go
-                </Button>
-            </CardActions>
         </Card>
     )
 }
