@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, TextField, Typography} from "@material-ui/core";
+import {Button, TextField, Typography, useTheme} from "@material-ui/core";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated} from "react-spring";
 import styles from './login.module.css';
@@ -11,6 +11,7 @@ export default function Login() {
     const {status: connectionStatus} = useConnectionStore();
     const {set: setToken} = useTokenStore();
     const [loginProps, set] = useSpring(() => ({x: 0, y: 0, opacity: 0}));
+    const theme = useTheme();
 
     useEffect(() => {
         set({opacity: 100});
@@ -51,7 +52,8 @@ export default function Login() {
                     marginRight: loginProps.x.interpolate(v => v/10 + 'px'),
                     // @ts-ignore
                     marginBottom: loginProps.y.interpolate(v => v/10 + 'px'),
-                    opacity: loginProps.opacity.interpolate(v => v + '%')
+                    opacity: loginProps.opacity.interpolate(v => v + '%'),
+                    background: theme.palette.type === 'light' ? '#e9e9e9' : '#151515'
                 }}>
                 <Typography variant={'h6'}>Welcome</Typography>
                 <TextField label="username" variant={"outlined"} onChange={usernameChanged}/>

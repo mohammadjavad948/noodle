@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add random number generator">
-      <change beforePath="$PROJECT_DIR$/src/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="removed beginAtZero">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,21 +70,7 @@
       <workItem from="1615713734668" duration="4338000" />
       <workItem from="1615724462971" duration="4241000" />
       <workItem from="1615734779954" duration="4177000" />
-      <workItem from="1615783926288" duration="4737000" />
-    </task>
-    <task id="LOCAL-00011" summary="create basic navbar">
-      <created>1615634720604</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1615634720604</updated>
-    </task>
-    <task id="LOCAL-00012" summary="install zustand">
-      <created>1615658153944</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1615658153944</updated>
+      <workItem from="1615783926288" duration="5370000" />
     </task>
     <task id="LOCAL-00013" summary="create connection store">
       <created>1615658364467</created>
@@ -412,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615789647462</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="change order">
+      <created>1615789839154</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1615789839154</updated>
+    </task>
+    <task id="LOCAL-00061" summary="removed beginAtZero">
+      <created>1615790028691</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1615790028691</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -433,8 +436,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="change direction" />
-    <MESSAGE value="remove semicolon" />
     <MESSAGE value="add css modules" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="if connected it say connected" />
@@ -458,6 +459,8 @@
     <MESSAGE value="basic chart" />
     <MESSAGE value="add random color" />
     <MESSAGE value="add random number generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add random number generator" />
+    <MESSAGE value="change order" />
+    <MESSAGE value="removed beginAtZero" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed beginAtZero" />
   </component>
 </project>
