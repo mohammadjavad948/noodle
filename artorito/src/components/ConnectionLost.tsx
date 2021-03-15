@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, config} from "react-spring";
-import {makeStyles} from "@material-ui/core";
+import {makeStyles, useTheme} from "@material-ui/core";
 import Spinner from "./Spinner";
 
 const useStyle = makeStyles({
@@ -14,13 +14,14 @@ const useStyle = makeStyles({
         borderRadius: '5px',
         display: 'flex',
         alignItems: 'center',
-        gap: '10px'
+        gap: '10px',
     }
 })
 
 export default function ConnectionLost(){
     const {status, connected} = useConnectionStore();
     const styles = useStyle();
+    const theme = useTheme();
 
     useEffect(() => {
         setTimeout(() => {
@@ -31,6 +32,7 @@ export default function ConnectionLost(){
     const animations = useSpring({
         bottom: status ? '-100px' : '20px',
         config: config.wobbly,
+        color: theme.palette.type !== 'light' ? '#e9e9e9' : '#151515',
         delay: 1000
     })
 

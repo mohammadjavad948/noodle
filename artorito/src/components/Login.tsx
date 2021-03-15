@@ -10,8 +10,13 @@ export default function Login() {
     // animations and connection checks
     const {status: connectionStatus} = useConnectionStore();
     const {set: setToken} = useTokenStore();
-    const [loginProps, set] = useSpring(() => ({x: 0, y: 0, opacity: 0}));
     const theme = useTheme();
+    const [loginProps, set] = useSpring(() => ({
+        x: 0,
+        y: 0,
+        opacity: 0,
+        background: theme.palette.type === 'light' ? '#e9e9e9' : '#151515'
+    }));
 
     useEffect(() => {
         set({opacity: 100});
@@ -53,7 +58,7 @@ export default function Login() {
                     // @ts-ignore
                     marginBottom: loginProps.y.interpolate(v => v/10 + 'px'),
                     opacity: loginProps.opacity.interpolate(v => v + '%'),
-                    background: theme.palette.type === 'light' ? '#e9e9e9' : '#151515'
+                    background: loginProps.background
                 }}>
                 <Typography variant={'h6'}>Welcome</Typography>
                 <TextField label="username" variant={"outlined"} onChange={usernameChanged}/>
