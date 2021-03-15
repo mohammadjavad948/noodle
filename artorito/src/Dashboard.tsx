@@ -37,12 +37,12 @@ function DashboardCard(props: DashboardCardI) {
         new Chart(canvas, {
             type: 'line',
             data: {
-                labels: [1, 2, 3, 4, 5],
+                labels: [1, 2, 3, 4, 5, 6, 7],
                 datasets: [{
                     label: props.title,
                     fill: false,
                     borderColor: getRandomColor(),
-                    data: [50, 80, 20, 30, 100]
+                    data: getRandomNumbers(7, 100)
                 }]
             },
             options: {
@@ -67,6 +67,16 @@ function DashboardCard(props: DashboardCardI) {
                 }
             }
         })
+    }
+
+    function getRandomNumbers(count: number, range: number): number[] {
+        let all: number[] = [];
+
+        for (let i = 0; i < count; i++){
+            all.push(Math.floor(Math.random() * range));
+        }
+
+        return all;
     }
 
     function getRandomColor(): string {
