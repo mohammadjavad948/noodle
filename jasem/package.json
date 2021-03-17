@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "build:dev": "tsv --watch",
+    "start": "node ./dist/main.js",
+    "start:dev": "nodemon ./dist/main.js"
   },
   "author": "",
   "license": "ISC",
