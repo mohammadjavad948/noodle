@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add sign up and a bunch of transition">
-      <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change welcome">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jasem" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,21 +68,8 @@
       <workItem from="1615724462971" duration="4241000" />
       <workItem from="1615734779954" duration="4177000" />
       <workItem from="1615783926288" duration="8459000" />
-      <workItem from="1615807206826" duration="4436000" />
-    </task>
-    <task id="LOCAL-00023" summary="finished TokenStore.ts">
-      <created>1615702595386</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1615702595386</updated>
-    </task>
-    <task id="LOCAL-00024" summary="change name">
-      <created>1615702638172</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1615702638172</updated>
+      <workItem from="1615807206826" duration="4789000" />
+      <workItem from="1615963939909" duration="223000" />
     </task>
     <task id="LOCAL-00025" summary="create login component">
       <created>1615703796264</created>
@@ -413,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615811538356</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="smother transition">
+      <created>1615812539255</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1615812539255</updated>
+    </task>
+    <task id="LOCAL-00073" summary="change welcome">
+      <created>1615812694348</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1615812694348</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,8 +435,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="inject spinner into Login.tsx" />
-    <MESSAGE value="remove unused import" />
     <MESSAGE value="login finished" />
     <MESSAGE value="add dashboard icon to nav" />
     <MESSAGE value="add bootstrap" />
@@ -459,6 +458,8 @@
     <MESSAGE value="add dark toggle to nav" />
     <MESSAGE value="change dark mode toggle" />
     <MESSAGE value="add sign up and a bunch of transition" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sign up and a bunch of transition" />
+    <MESSAGE value="smother transition" />
+    <MESSAGE value="change welcome" />
+    <option name="LAST_COMMIT_MESSAGE" value="change welcome" />
   </component>
 </project>
