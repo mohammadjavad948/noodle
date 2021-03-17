@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "build:dev": "tsv --watch",
+    "build:dev": "tsc --watch",
     "start": "node ./dist/main.js",
     "start:dev": "nodemon ./dist/main.js"
   },
