@@ -9,7 +9,7 @@ require('dotenv').config();
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/stat', (req, res) => {
+app.get('/status', (req, res) => {
     return res.send({
         status: process.env.STATUS
     });
