@@ -1,25 +1,21 @@
-import {Document, model, Schema} from "mongoose";
+import {Document, model, Schema, Types} from "mongoose";
+import {Label, LabelI} from "./Label";
 
 interface UserI extends Document{
     name: string
     username: string
     password: string
-    label: {
-      name: string
-      time: number
-      color: string
-    }[]
+    label: LabelI[] | string
 }
 
 const schema = new Schema({
     name: String,
     username: String,
     password: String,
-    label:[{
-       name: String,
-       time: Number,
-       color: String
-    }],
+    label: {
+        type: Types.ObjectId,
+        ref: Label
+    },
 });
 
 

@@ -1,6 +1,6 @@
 import {Document, model, Schema} from "mongoose";
 
-interface LabelI extends Document{
+export interface LabelI extends Document{
     name: string
     color: string
 }
