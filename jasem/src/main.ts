@@ -3,6 +3,7 @@ import {connect} from "mongoose";
 import * as bodyParser from "body-parser";
 import {User} from "./mongo/User";
 import {genSalt, hash} from "bcrypt";
+import {sign} from "jsonwebtoken";
 require('dotenv').config();
 
 const app = express();
@@ -23,10 +24,10 @@ app.post('/register', async (req, res) => {
     });
 
     // generate token
-    const token
+    const token = await sign({_id: newUser._id}, process.env.TOKEN);
 
     return res.send({
-        user: newUser
+        user: newUser, token
     })
 });
 
