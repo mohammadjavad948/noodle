@@ -9,6 +9,12 @@ require('dotenv').config();
 const app = express();
 app.use(bodyParser.json());
 
+app.get('/stat', (req, res) => {
+    return res.send({
+        status: process.env.STATUS
+    });
+});
+
 app.post('/register', async (req, res) => {
     const {username, password: pass, name} = req.body;
 
