@@ -5,17 +5,17 @@ interface UserI extends Document{
     name: string
     username: string
     password: string
-    label: LabelI[] | string
+    label: LabelI[] | string[]
 }
 
 const schema = new Schema({
     name: String,
     username: String,
     password: String,
-    label: {
+    label: [{
         type: Types.ObjectId,
         ref: Label
-    },
+    }],
 });
 
 
