@@ -22,7 +22,7 @@ app.get('/label', authMiddleware, async (req, res) => {
     // @ts-ignore
     const user = req.user;
 
-    const labels = await Label.find({ _id: { $in : user.label } }).populate('time');
+    const labels = await Label.find().where('_id').in(user.label).populate('time').exec();
 
     return res.send({
         labels
