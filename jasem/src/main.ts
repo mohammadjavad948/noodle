@@ -3,6 +3,7 @@ import {connect} from "mongoose";
 import * as bodyParser from "body-parser";
 import {authMiddleware, login, register} from "./auth";
 import {Label} from "./mongo/Label";
+import {Time} from "./mongo/Time";
 require('dotenv').config();
 
 const app = express();
@@ -57,7 +58,7 @@ app.put('/label/:id', authMiddleware, async (req, res) => {
 
     const {id} = req.params;
 
-    const label = await Label.findById(id).update({
+    const label = await Label.findOne({_id: id}).update({
         color, name
     });
 
@@ -71,13 +72,36 @@ app.get('/label/:id', authMiddleware, async (req, res) => {
 
     const {id} = req.params;
 
-    const label = await Label.findById(id).populate('time').exec();
+    const label = await Label.findOne({_id: id}).populate('time').exec();
 
     return res.send({
         label
     })
 });
 
+
+
+app.post('/time', authMiddleware, async (req, res) => {
+    // @ts-ignore
+    const user = req.user;
+
+    const {label, time} = req.body;
+
+
+    const savedTime = await Time.create({
+        time
+    });
+
+    const savedLabel = await Label.findOne({_id: label});
+
+    savedLabel.time.push(savedTime._id)
+
+    await user.save();
+
+    return res.send({
+        label
+    })
+});
 
 
 
