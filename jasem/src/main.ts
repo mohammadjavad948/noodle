@@ -51,6 +51,24 @@ app.post('/label', authMiddleware, async (req, res) => {
 });
 
 
+app.put('/label/:id', authMiddleware, async (req, res) => {
+    // @ts-ignore
+    const user = req.user;
+
+    const {name, color} = req.body;
+
+    const {id} = req.params;
+
+    const label = await Label.findById(id).update({
+        color, name
+    });
+
+    return res.send({
+        label
+    })
+});
+
+
 connect(process.env.DB || 'mongodb://admin:secret@localhost:27017/noodle?authSource=admin', {useUnifiedTopology: true, useNewUrlParser: true}, () => {
     console.log('connected to db')
 })
