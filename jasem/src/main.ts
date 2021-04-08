@@ -52,8 +52,6 @@ app.post('/label', authMiddleware, async (req, res) => {
 
 
 app.put('/label/:id', authMiddleware, async (req, res) => {
-    // @ts-ignore
-    const user = req.user;
 
     const {name, color} = req.body;
 
@@ -67,6 +65,20 @@ app.put('/label/:id', authMiddleware, async (req, res) => {
         label
     })
 });
+
+
+app.get('/label/:id', authMiddleware, async (req, res) => {
+
+    const {id} = req.params;
+
+    const label = await Label.findById(id).populate('time').exec();
+
+    return res.send({
+        label
+    })
+});
+
+
 
 
 connect(process.env.DB || 'mongodb://admin:secret@localhost:27017/noodle?authSource=admin', {useUnifiedTopology: true, useNewUrlParser: true}, () => {
