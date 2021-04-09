@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from "react";
-import {Card, CardContent, Typography} from "@material-ui/core";
+import {Card, CardContent, Typography, useTheme} from "@material-ui/core";
 import Chart from "chart.js";
 
 Chart.defaults.global.defaultFontFamily = "'PT Sans', sans-serif"
@@ -25,6 +25,8 @@ interface DashboardCardI {
 function DashboardCard(props: DashboardCardI) {
 
     const graphCanvas = useRef() as React.MutableRefObject<HTMLCanvasElement>;
+
+    const theme = useTheme();
 
     useEffect(() => {
        buildChart();
@@ -88,7 +90,7 @@ function DashboardCard(props: DashboardCardI) {
     }
 
     return (
-        <Card variant={"outlined"} className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3">
+        <Card variant={"outlined"} style={{background: theme.palette.background.default}} className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3">
             <CardContent>
                 <Typography style={{textAlign: 'center', fontSize: '14px', opacity: '60%'}}>
                     {props.description}
