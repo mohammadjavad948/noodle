@@ -26,6 +26,7 @@ export default function ConnectionLost(){
     const theme = useTheme();
 
     useEffect(() => {
+        // fetch server status
         axios.get(ENDPOINT + '/status')
             .then((res: any) => {
                 if (res.data.status === 'online'){
@@ -33,6 +34,7 @@ export default function ConnectionLost(){
                 }
             })
             .catch(console.log)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const animations = useSpring({
