@@ -26,7 +26,7 @@ function NewLabelCard(){
             className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3 d-flex flex-column align-items-center justify-content-center"
         >
             <Typography variant={"body1"} className="mt-2">new Label</Typography>
-            <TextField label="new label" variant="outlined" className="mt-4" />
+            <TextField label="name" variant="outlined" className="mt-4" />
             <Button variant="contained" color="primary" className="mt-2 mb-2">
                 save
             </Button>
