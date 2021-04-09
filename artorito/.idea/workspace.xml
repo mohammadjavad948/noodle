@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="create LabelStore">
-      <change beforePath="$PROJECT_DIR$/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="get all labels">
+      <change beforePath="$PROJECT_DIR$/src/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,21 +94,7 @@
       <workItem from="1617953444322" duration="86000" />
       <workItem from="1617956221657" duration="3010000" />
       <workItem from="1617973560052" duration="2490000" />
-      <workItem from="1617984179813" duration="2604000" />
-    </task>
-    <task id="LOCAL-00047" summary="login finished">
-      <created>1615727110979</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1615727110979</updated>
-    </task>
-    <task id="LOCAL-00048" summary="add router">
-      <created>1615727560484</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1615727560484</updated>
+      <workItem from="1617984179813" duration="2935000" />
     </task>
     <task id="LOCAL-00049" summary="add dashboard icon to nav">
       <created>1615727802971</created>
@@ -439,7 +425,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617986476000</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="add useEffect">
+      <created>1617986793962</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1617986793962</updated>
+    </task>
+    <task id="LOCAL-00097" summary="get all labels">
+      <created>1617986987329</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1617986987329</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,8 +460,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="change dark mode toggle" />
-    <MESSAGE value="add sign up and a bunch of transition" />
     <MESSAGE value="smother transition" />
     <MESSAGE value="change welcome" />
     <MESSAGE value="add env" />
@@ -485,6 +483,8 @@
     <MESSAGE value="add more config" />
     <MESSAGE value="add label api" />
     <MESSAGE value="create LabelStore" />
-    <option name="LAST_COMMIT_MESSAGE" value="create LabelStore" />
+    <MESSAGE value="add useEffect" />
+    <MESSAGE value="get all labels" />
+    <option name="LAST_COMMIT_MESSAGE" value="get all labels" />
   </component>
 </project>
