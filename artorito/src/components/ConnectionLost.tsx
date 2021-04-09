@@ -3,8 +3,7 @@ import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, config} from "react-spring";
 import {makeStyles, useTheme} from "@material-ui/core";
 import Spinner from "./Spinner";
-import {ENDPOINT} from "../env";
-const axios = require('axios').default;
+import {status as getStatus} from '../api/api';
 
 const useStyle = makeStyles({
     main: {
@@ -27,7 +26,7 @@ export default function ConnectionLost(){
 
     useEffect(() => {
         // fetch server status
-        axios.get(ENDPOINT + '/status')
+        getStatus()
             .then((res: any) => {
                 if (res.data.status === 'online'){
                     connected();

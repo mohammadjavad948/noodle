@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="import axios">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add api file">
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,28 +90,7 @@
       <workItem from="1615963939909" duration="223000" />
       <workItem from="1617876980366" duration="714000" />
       <workItem from="1617953444322" duration="86000" />
-      <workItem from="1617956221657" duration="1424000" />
-    </task>
-    <task id="LOCAL-00029" summary="add some background">
-      <created>1615706065307</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1615706065307</updated>
-    </task>
-    <task id="LOCAL-00030" summary="basic card for login">
-      <created>1615706836797</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1615706836797</updated>
-    </task>
-    <task id="LOCAL-00031" summary="finished login form">
-      <created>1615707195390</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1615707195390</updated>
+      <workItem from="1617956221657" duration="1771000" />
     </task>
     <task id="LOCAL-00032" summary="add some thick animation">
       <created>1615708043847</created>
@@ -434,7 +414,28 @@
       <option name="project" value="LOCAL" />
       <updated>1617957535636</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="it really connect to server">
+      <created>1617957975408</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1617957975408</updated>
+    </task>
+    <task id="LOCAL-00079" summary="comment">
+      <created>1617958111224</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958111224</updated>
+    </task>
+    <task id="LOCAL-00080" summary="add api file">
+      <created>1617958196099</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958196099</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,9 +456,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add router" />
-    <MESSAGE value="add fade intro" />
-    <MESSAGE value="change timeouts" />
     <MESSAGE value="create dashboard component" />
     <MESSAGE value="remove link" />
     <MESSAGE value="basic chart" />
@@ -480,6 +478,9 @@
     <MESSAGE value="change env" />
     <MESSAGE value="add axios" />
     <MESSAGE value="import axios" />
-    <option name="LAST_COMMIT_MESSAGE" value="import axios" />
+    <MESSAGE value="it really connect to server" />
+    <MESSAGE value="comment" />
+    <MESSAGE value="add api file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add api file" />
   </component>
 </project>
