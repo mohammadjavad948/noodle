@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, FormControlLabel, Switch, TextField, Typography, useTheme} from "@material-ui/core";
+import {Button, FormControlLabel, Switch, TextField, Typography} from "@material-ui/core";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, useSprings} from "react-spring";
 import styles from './login.module.css';
@@ -146,6 +146,7 @@ export default function Login() {
 
     useEffect(() => {
         set({opacity: 100});
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     function Mouse(event: any){

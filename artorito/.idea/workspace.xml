@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add login function">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change message">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +38,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -89,42 +93,7 @@
       <workItem from="1615963939909" duration="223000" />
       <workItem from="1617876980366" duration="714000" />
       <workItem from="1617953444322" duration="86000" />
-      <workItem from="1617956221657" duration="2126000" />
-    </task>
-    <task id="LOCAL-00034" summary="remove semicolon">
-      <created>1615708706425</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1615708706425</updated>
-    </task>
-    <task id="LOCAL-00035" summary="add css modules">
-      <created>1615714238746</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1615714238746</updated>
-    </task>
-    <task id="LOCAL-00036" summary="remove unused import">
-      <created>1615714258615</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1615714258615</updated>
-    </task>
-    <task id="LOCAL-00037" summary="bug fix">
-      <created>1615714623360</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1615714623361</updated>
-    </task>
-    <task id="LOCAL-00038" summary="if connected it say connected">
-      <created>1615715462304</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1615715462304</updated>
+      <workItem from="1617956221657" duration="3010000" />
     </task>
     <task id="LOCAL-00039" summary="remove unused method">
       <created>1615715521334</created>
@@ -434,7 +403,42 @@
       <option name="project" value="LOCAL" />
       <updated>1617958393439</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="user can login">
+      <created>1617958666920</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958666920</updated>
+    </task>
+    <task id="LOCAL-00084" summary="user can login">
+      <created>1617958673418</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958673419</updated>
+    </task>
+    <task id="LOCAL-00085" summary="add register api">
+      <created>1617958755381</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958755381</updated>
+    </task>
+    <task id="LOCAL-00086" summary="user can register">
+      <created>1617958823715</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958823715</updated>
+    </task>
+    <task id="LOCAL-00087" summary="change message">
+      <created>1617958939707</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1617958939707</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,10 +459,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="basic chart" />
-    <MESSAGE value="add random color" />
-    <MESSAGE value="add random number generator" />
-    <MESSAGE value="change order" />
     <MESSAGE value="removed beginAtZero" />
     <MESSAGE value="add theme support for login" />
     <MESSAGE value="add theme support for ConnectionLost.tsx" />
@@ -480,6 +480,10 @@
     <MESSAGE value="add api file" />
     <MESSAGE value="move axios requests" />
     <MESSAGE value="add login function" />
-    <option name="LAST_COMMIT_MESSAGE" value="add login function" />
+    <MESSAGE value="user can login" />
+    <MESSAGE value="add register api" />
+    <MESSAGE value="user can register" />
+    <MESSAGE value="change message" />
+    <option name="LAST_COMMIT_MESSAGE" value="change message" />
   </component>
 </project>
