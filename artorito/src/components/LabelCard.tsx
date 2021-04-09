@@ -2,10 +2,6 @@ import React, {useEffect, useRef} from "react";
 import {Card, CardContent, Typography, useTheme} from "@material-ui/core";
 import Chart from "chart.js";
 
-Chart.defaults.global.defaultFontFamily = "'PT Sans', sans-serif"
-// @ts-ignore
-Chart.defaults.global.legend.display = false;
-
 interface DashboardCardI {
     title: string
     description: string
@@ -54,6 +50,9 @@ export default function DashboardCard(props: DashboardCardI) {
                             display: false
                         }
                     }],
+                },
+                legend: {
+                    display: false
                 }
             }
         })
