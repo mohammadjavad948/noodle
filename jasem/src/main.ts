@@ -79,6 +79,25 @@ app.get('/label/:id', authMiddleware, async (req, res) => {
     })
 });
 
+app.post('/time/new', authMiddleware, async (req, res) => {
+
+    const {label, time} = req.body;
+
+    const createdTime = await Time.create({
+        time
+    });
+
+    const createdLabel = await Label.findOne({_id: label});
+
+    createdLabel.time.push(createdTime._id);
+
+    await createdLabel.save();
+
+    res.send({
+        time: createdTime
+    })
+})
+
 
 app.get('/label/:id', authMiddleware, async (req, res) => {
 
