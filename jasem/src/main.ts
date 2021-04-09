@@ -80,6 +80,18 @@ app.get('/label/:id', authMiddleware, async (req, res) => {
 });
 
 
+app.get('/label/:id', authMiddleware, async (req, res) => {
+
+    const {id} = req.params;
+
+    const label = await Label.findOne({_id: id}).populate('time').exec();
+
+    return res.send({
+        label
+    })
+});
+
+
 
 app.post('/time', authMiddleware, async (req, res) => {
     // @ts-ignore
