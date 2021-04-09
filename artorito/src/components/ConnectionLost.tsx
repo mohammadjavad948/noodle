@@ -45,7 +45,7 @@ export default function ConnectionLost(){
 
     return (
         <animated.div className={styles.main} style={animations}>
-            {status ? 'connected :D' : 'connecting to server'}
+            {status ? 'connected :D' : 'catching a server'}
             {status ? '' : <Spinner/>}
         </animated.div>
     )
