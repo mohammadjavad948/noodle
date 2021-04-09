@@ -2,11 +2,22 @@ import React, {useEffect} from "react";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Dashboard from "./Dashboard";
+import {allLabels} from "./api/api";
+import {useTokenStore} from "./stores/TokenStore";
+import {useLabelsStore} from "./stores/LabelsStore";
 
 export default function Main() {
 
-    useEffect(() => {
+    const {token} = useTokenStore();
+    const {setLabels} = useLabelsStore();
 
+    useEffect(() => {
+        allLabels(token)
+            .then((res: any) => {
+                console.log(res);
+                setLabels(res.data.labels);
+            })
+            .catch(console.log)
     }, []);
 
     return (
