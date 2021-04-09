@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Button, FormControlLabel, Switch, TextField, Typography} from "@material-ui/core";
+import {Button, FormControlLabel, Switch, TextField, Typography, useTheme} from "@material-ui/core";
 import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, useSprings} from "react-spring";
 import styles from './login.module.css';
@@ -127,14 +127,14 @@ function SignUpForm({setAnimation, login, style}){
 
 export default function Login() {
     // animations and connection checks
-    const {theme: savedTheme, light, dark} = useThemeStore();
+    const {light, dark} = useThemeStore();
+    const uiTheme = useTheme();
     const [page, setPageIndex] = useState(0);
     const [loginProps, set] = useSpring(() => ({
         x: 0,
         y: 0,
         opacity: 0,
-        height: '300px',
-        background: savedTheme === 'light' ? '#e9e9e9' : '#151515'
+        height: '300px'
     }));
 
     const [springs, setPage] = useSprings(2, (index) => {
@@ -155,9 +155,7 @@ export default function Login() {
 
     function changeTheme(){
 
-        set({background: savedTheme !== 'light' ? '#e9e9e9' : '#151515'});
-
-        if (savedTheme === 'dark'){
+        if (uiTheme.palette.type === 'dark'){
             light();
         }else {
             dark()
@@ -198,7 +196,7 @@ export default function Login() {
                     // @ts-ignore
                     marginBottom: loginProps.y.interpolate(v => v/10 + 'px'),
                     opacity: loginProps.opacity.interpolate(v => v + '%'),
-                    background: loginProps.background,
+                    background: uiTheme.palette.background.default,
                     height: loginProps.height
                 }}>
                 {springs.map((props, i) => {
@@ -209,7 +207,7 @@ export default function Login() {
                         : <SignUpForm key={i} setAnimation={set} login={transition} style={props}/>
                 })}
                 <FormControlLabel
-                    control={<Switch size="small" checked={savedTheme === 'dark'} color={"primary"} onChange={changeTheme}/>}
+                    control={<Switch size="small" checked={uiTheme.palette.type === 'dark'} color={"primary"} onChange={changeTheme}/>}
                     label="dark"
                     style={{position: 'absolute', bottom: '5px'}}
                 />
