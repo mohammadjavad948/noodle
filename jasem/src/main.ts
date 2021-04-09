@@ -5,9 +5,11 @@ import {authMiddleware, login, register} from "./auth";
 import {Label} from "./mongo/Label";
 import {Time} from "./mongo/Time";
 require('dotenv').config();
+import * as cors from 'cors';
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 app.get('/status', (req, res) => {
     return res.send({
