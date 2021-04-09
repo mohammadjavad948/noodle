@@ -14,7 +14,6 @@ export default function Main() {
     useEffect(() => {
         allLabels(token)
             .then((res: any) => {
-                console.log(res);
                 setLabels(res.data.labels);
             })
             .catch(console.log)
