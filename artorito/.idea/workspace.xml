@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change env">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add axios">
+      <change beforePath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ConnectionLost.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,14 +89,7 @@
       <workItem from="1615963939909" duration="223000" />
       <workItem from="1617876980366" duration="714000" />
       <workItem from="1617953444322" duration="86000" />
-      <workItem from="1617956221657" duration="364000" />
-    </task>
-    <task id="LOCAL-00027" summary="remove button component">
-      <created>1615704706701</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1615704706701</updated>
+      <workItem from="1617956221657" duration="993000" />
     </task>
     <task id="LOCAL-00028" summary="create main component">
       <created>1615705353669</created>
@@ -435,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617956255129</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="add axios">
+      <created>1617956592315</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1617956592316</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +455,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add bootstrap" />
     <MESSAGE value="add bootstrap grid" />
     <MESSAGE value="add router" />
     <MESSAGE value="add fade intro" />
@@ -481,6 +479,7 @@
     <MESSAGE value="change welcome" />
     <MESSAGE value="add env" />
     <MESSAGE value="change env" />
-    <option name="LAST_COMMIT_MESSAGE" value="change env" />
+    <MESSAGE value="add axios" />
+    <option name="LAST_COMMIT_MESSAGE" value="add axios" />
   </component>
 </project>

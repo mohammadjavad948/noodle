@@ -3,6 +3,7 @@ import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, config} from "react-spring";
 import {makeStyles, useTheme} from "@material-ui/core";
 import Spinner from "./Spinner";
+const axios = require('axios').default;
 
 const useStyle = makeStyles({
     main: {
