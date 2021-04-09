@@ -17,6 +17,7 @@ export default function Main() {
                 setLabels(res.data.labels);
             })
             .catch(console.log)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
