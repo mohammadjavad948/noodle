@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change card color">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add more config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,21 +95,8 @@
       <workItem from="1617876980366" duration="714000" />
       <workItem from="1617953444322" duration="86000" />
       <workItem from="1617956221657" duration="3010000" />
-      <workItem from="1617973560052" duration="2074000" />
-    </task>
-    <task id="LOCAL-00043" summary="inject spinner into ConnectionLost.tsx">
-      <created>1615717463745</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1615717463745</updated>
-    </task>
-    <task id="LOCAL-00044" summary="spinner bug fix">
-      <created>1615717593764</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1615717593764</updated>
+      <workItem from="1617973560052" duration="2490000" />
+      <workItem from="1617984179813" duration="1247000" />
     </task>
     <task id="LOCAL-00045" summary="inject spinner into Login.tsx">
       <created>1615717608002</created>
@@ -438,7 +427,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617974769927</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="create label card component">
+      <created>1617975816237</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1617975816238</updated>
+    </task>
+    <task id="LOCAL-00093" summary="add more config">
+      <created>1617975933030</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1617975933030</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,8 +462,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add theme provider to app" />
-    <MESSAGE value="add dark theme to login" />
     <MESSAGE value="change color" />
     <MESSAGE value="add dark toggle to nav" />
     <MESSAGE value="change dark mode toggle" />
@@ -484,6 +485,8 @@
     <MESSAGE value="add theme" />
     <MESSAGE value="login will get theme from material ui" />
     <MESSAGE value="change card color" />
-    <option name="LAST_COMMIT_MESSAGE" value="change card color" />
+    <MESSAGE value="create label card component" />
+    <MESSAGE value="add more config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more config" />
   </component>
 </project>

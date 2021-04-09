@@ -13,3 +13,11 @@ export function login(username: string, password: string){
 export function register(username: string, password: string, name: string){
     return axios.post(ENDPOINT + '/register', {username, password, name});
 }
+
+export function allLabels(token: string){
+    return axios.get(ENDPOINT + '/label', {
+       headers: {
+           token
+       }
+    });
+}
