@@ -3,6 +3,7 @@ import {useConnectionStore} from "../stores/ConnectionStore";
 import {useSpring, animated, config} from "react-spring";
 import {makeStyles, useTheme} from "@material-ui/core";
 import Spinner from "./Spinner";
+import {ENDPOINT} from "../env";
 const axios = require('axios').default;
 
 const useStyle = makeStyles({
@@ -25,9 +26,13 @@ export default function ConnectionLost(){
     const theme = useTheme();
 
     useEffect(() => {
-        setTimeout(() => {
-            connected();
-        }, 3000);
+        axios.get(ENDPOINT + '/status')
+            .then((res: any) => {
+                if (res.data.status === 'online'){
+                    connected();
+                }
+            })
+            .catch(console.log)
     }, [])
 
     const animations = useSpring({
