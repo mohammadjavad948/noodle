@@ -1,1 +1,1 @@
-export const ENDPOINT = 'localhost:4000'
+export const ENDPOINT = 'https://immagonnakillyou.herokuapp.com'
