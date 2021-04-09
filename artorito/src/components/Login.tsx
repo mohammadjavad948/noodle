@@ -6,7 +6,7 @@ import styles from './login.module.css';
 import Spinner from "./Spinner";
 import {useTokenStore} from "../stores/TokenStore";
 import {useThemeStore} from "../stores/ThemeStore";
-import {login as loginApi} from '../api/api';
+import {login as loginApi, register as registerApi} from '../api/api';
 
 // @ts-ignore
 function LoginFrom({setAnimation, signUp, style}){
@@ -85,15 +85,17 @@ function SignUpForm({setAnimation, login, style}){
     function passwordChanged(event: any){
         setPassword(event.target.value);
     }
+
     function signUp(){
         setRequest(true);
 
-        setTimeout(()=> {
-            setAnimation({opacity: 0})
-        }, 2500)
-        setTimeout(()=> {
-            setToken('aefefesf');
-        }, 3000)
+        registerApi(username, password, name)
+            .then((res: any) => {
+                setAnimation({opacity: 0});
+                setToken(res.data.token);
+            }).catch(() => {
+            setRequest(false);
+        });
     }
 
     return (
