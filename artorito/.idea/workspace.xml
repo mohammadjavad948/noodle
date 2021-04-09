@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add new label card">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change label">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,14 +96,7 @@
       <workItem from="1617953444322" duration="86000" />
       <workItem from="1617956221657" duration="3010000" />
       <workItem from="1617973560052" duration="2490000" />
-      <workItem from="1617984179813" duration="4400000" />
-    </task>
-    <task id="LOCAL-00053" summary="add fade intro">
-      <created>1615729584172</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1615729584173</updated>
+      <workItem from="1617984179813" duration="4701000" />
     </task>
     <task id="LOCAL-00054" summary="change timeouts">
       <created>1615729721983</created>
@@ -439,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617988910065</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="change label">
+      <created>1617989088872</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1617989088872</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +462,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="change env" />
     <MESSAGE value="add axios" />
     <MESSAGE value="import axios" />
     <MESSAGE value="it really connect to server" />
@@ -485,6 +486,7 @@
     <MESSAGE value="remove log" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="add new label card" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new label card" />
+    <MESSAGE value="change label" />
+    <option name="LAST_COMMIT_MESSAGE" value="change label" />
   </component>
 </project>
