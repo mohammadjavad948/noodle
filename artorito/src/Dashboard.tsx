@@ -27,6 +27,10 @@ function NewLabelCard(){
         >
             <Typography variant={"body1"} className="mt-2">new Label</Typography>
             <TextField label="name" variant="outlined" className="mt-4" />
+            <div className="mt-2">
+                color
+                <input type="color" onChange={(e) => {console.log(e.target.value)}}/>
+            </div>
             <Button variant="contained" color="primary" className="mt-2 mb-2">
                 save
             </Button>
