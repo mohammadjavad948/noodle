@@ -3,8 +3,7 @@ import {Card, CardContent, Typography, useTheme} from "@material-ui/core";
 import Chart from "chart.js";
 
 interface DashboardCardI {
-    title: string
-    description: string
+    data: any
 }
 
 export default function DashboardCard(props: DashboardCardI) {
@@ -26,9 +25,9 @@ export default function DashboardCard(props: DashboardCardI) {
             data: {
                 labels: [1, 2, 3, 4, 5, 6, 7],
                 datasets: [{
-                    label: props.title,
+                    label: props.data.name,
                     fill: false,
-                    borderColor: getRandomColor(),
+                    borderColor: props.data.color,
                     data: getRandomNumbers(7, 100)
                 }]
             },
@@ -68,23 +67,11 @@ export default function DashboardCard(props: DashboardCardI) {
         return all;
     }
 
-    function getRandomColor(): string {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
-
     return (
         <Card variant={"outlined"} style={{background: theme.palette.background.default}} className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3">
             <CardContent>
-                <Typography style={{textAlign: 'center', fontSize: '14px', opacity: '60%'}}>
-                    {props.description}
-                </Typography>
                 <Typography style={{textAlign: 'center', fontSize: '20px'}}>
-                    {props.title}
+                    {props.data.name}
                 </Typography>
                 <canvas
                     width={"100%"}

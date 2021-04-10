@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="create label endpoint">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="user can create label">
       <change beforePath="$PROJECT_DIR$/src/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LabelCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LabelCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +97,7 @@
       <workItem from="1617973560052" duration="2490000" />
       <workItem from="1617984179813" duration="5609000" />
       <workItem from="1618025818041" duration="2938000" />
-      <workItem from="1618050296825" duration="332000" />
-    </task>
-    <task id="LOCAL-00059" summary="add random number generator">
-      <created>1615789647462</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1615789647462</updated>
+      <workItem from="1618050296825" duration="642000" />
     </task>
     <task id="LOCAL-00060" summary="change order">
       <created>1615789839154</created>
@@ -441,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618050465781</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="user can create label">
+      <created>1618050748310</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1618050748310</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +463,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="move axios requests" />
     <MESSAGE value="add login function" />
     <MESSAGE value="user can login" />
     <MESSAGE value="add register api" />
@@ -487,6 +487,7 @@
     <MESSAGE value="add color" />
     <MESSAGE value="add state for form" />
     <MESSAGE value="create label endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="create label endpoint" />
+    <MESSAGE value="user can create label" />
+    <option name="LAST_COMMIT_MESSAGE" value="user can create label" />
   </component>
 </project>
