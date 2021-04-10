@@ -21,3 +21,11 @@ export function allLabels(token: string){
        }
     });
 }
+
+export function createLabel(token: string, name: string, color: string){
+    return axios.post(ENDPOINT + '/label', {name, color},  {
+        headers: {
+            token
+        }
+    });
+}
