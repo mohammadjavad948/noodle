@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import DashboardCard from "./components/LabelCard";
 import {useLabelsStore} from "./stores/LabelsStore";
 import {Button, Card, TextField, Typography} from "@material-ui/core";
+import {useTokenStore} from "./stores/TokenStore";
+import {createLabel} from "./api/api";
 
 
 export default function Dashboard() {
@@ -23,8 +25,16 @@ function NewLabelCard(){
     const [name, setName] = useState('');
     const [color, setColor] = useState('#000000');
 
+    const {token} = useTokenStore();
+
     function save(){
-        console.log({name, color})
+        console.log({name, color});
+
+        createLabel(token, name, color)
+            .then((res: any) => {
+                console.log(res)
+            })
+            .catch(console.log)
     }
 
     return (
