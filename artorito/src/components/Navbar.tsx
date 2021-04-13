@@ -12,6 +12,8 @@ import {
 import {green} from "@material-ui/core/colors";
 import {useTokenStore} from "../stores/TokenStore";
 import {useThemeStore} from "../stores/ThemeStore";
+import {useHistory} from 'react-router-dom';
+
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
@@ -29,8 +31,18 @@ function Navbar(){
     const {set: setToken} = useTokenStore();
     const {theme, dark, light} = useThemeStore();
 
+    const history = useHistory();
+
     function logout(){
         setToken('');
+    }
+
+    function dashboard(){
+        history.push('/')
+    }
+
+    function add(){
+        history.push('/new')
     }
 
     function changeTheme() {
@@ -53,7 +65,12 @@ function Navbar(){
                         control={<Switch size="small" checked={theme === 'dark'} color={"primary"} onChange={changeTheme}/>}
                         label="dark"
                     />
-                    <Button>
+                    <Button onClick={add}>
+                        <Icon>
+                            add
+                        </Icon>
+                    </Button>
+                    <Button onClick={dashboard}>
                         <Icon>
                             dashboard
                         </Icon>
