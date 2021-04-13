@@ -49,13 +49,27 @@ export default function NewTime(){
         setStart(false);
     }
 
+    function reset(){
+
+        clearInterval(interval);
+
+        ref.current = 0;
+
+        setTime(0);
+
+        setStart(false);
+    }
+
     return (
         <div className={style.container}>
             <animated.div style={animation} className={style.time}>
                 {msToTime(time)}
             </animated.div>
 
-            {start ? <Stop click={stop}/> : <Start click={run}/>}
+            <div style={{display: 'flex', gap: '20px'}}>
+                {start ? <Stop click={stop}/> : <Start click={run}/>}
+                {start ? '' : <Reset click={reset}/>}
+            </div>
         </div>
     )
 }
@@ -78,6 +92,18 @@ function Stop({click}){
         <Button onClick={click} variant={"outlined"}>
             <Icon>
                 stop
+            </Icon>
+        </Button>
+    )
+}
+
+
+// @ts-ignore
+function Reset({click}){
+    return (
+        <Button onClick={click} variant={"outlined"}>
+            <Icon>
+                replay
             </Icon>
         </Button>
     )
