@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add big button">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add container">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NewTime.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NewTime.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.tsx" afterDir="false" />
     </list>
@@ -101,14 +102,7 @@
       <workItem from="1618050296825" duration="1348000" />
       <workItem from="1618066554392" duration="167000" />
       <workItem from="1618284478914" duration="2664000" />
-      <workItem from="1618305827419" duration="1539000" />
-    </task>
-    <task id="LOCAL-00069" summary="change dark mode toggle">
-      <created>1615792761849</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1615792761849</updated>
+      <workItem from="1618305827419" duration="3338000" />
     </task>
     <task id="LOCAL-00070" summary="change dark mode toggle">
       <created>1615807503015</created>
@@ -446,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618307430934</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="add container">
+      <created>1618307546900</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1618307546900</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +468,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add more config" />
     <MESSAGE value="add label api" />
     <MESSAGE value="create LabelStore" />
     <MESSAGE value="add useEffect" />
@@ -492,6 +492,7 @@
     <MESSAGE value="import style" />
     <MESSAGE value="add container style" />
     <MESSAGE value="add big button" />
-    <option name="LAST_COMMIT_MESSAGE" value="add big button" />
+    <MESSAGE value="add container" />
+    <option name="LAST_COMMIT_MESSAGE" value="add container" />
   </component>
 </project>
