@@ -3,13 +3,13 @@ import {
     AppBar,
     Avatar,
     Button,
-    createStyles, FormControlLabel, Icon,
+    createStyles, FormControlLabel, Icon, IconButton,
     makeStyles, Switch,
     Theme,
     Toolbar,
     Typography
 } from "@material-ui/core";
-import {green} from "@material-ui/core/colors";
+import {green, red} from "@material-ui/core/colors";
 import {useTokenStore} from "../stores/TokenStore";
 import {useThemeStore} from "../stores/ThemeStore";
 import {useHistory} from 'react-router-dom';
@@ -61,21 +61,33 @@ function Navbar(){
                     <Typography variant="h6" className={classes.title}>
                         Noodle
                     </Typography>
-                    <FormControlLabel
-                        control={<Switch size="small" checked={theme === 'dark'} color={"primary"} onChange={changeTheme}/>}
-                        label="dark"
-                    />
-                    <Button onClick={add}>
+                    <IconButton onClick={changeTheme}>
+                        {
+                            theme === 'dark' ?
+                                <Icon>
+                                    light_mode
+                                </Icon>
+                                :
+                                <Icon>
+                                    dark_mode
+                                </Icon>
+                        }
+                    </IconButton>
+                    <IconButton onClick={add}>
                         <Icon>
                             add
                         </Icon>
-                    </Button>
-                    <Button onClick={dashboard}>
+                    </IconButton>
+                    <IconButton onClick={dashboard}>
                         <Icon>
                             dashboard
                         </Icon>
-                    </Button>
-                    <Button color="inherit" onClick={logout}>Logout</Button>
+                    </IconButton>
+                    <IconButton color="inherit" onClick={logout}>
+                        <Icon style={{color: red[500]}}>
+                            logout
+                        </Icon>
+                    </IconButton>
                 </Toolbar>
             </AppBar>
         </div>
