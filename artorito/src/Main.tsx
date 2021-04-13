@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 import {allLabels} from "./api/api";
 import {useTokenStore} from "./stores/TokenStore";
 import {useLabelsStore} from "./stores/LabelsStore";
+import NewTime from "./NewTime";
 
 export default function Main() {
 
@@ -26,6 +27,9 @@ export default function Main() {
 
             <div className="container mt-2">
                 <Switch>
+                    <Route path="/new">
+                        <NewTime />
+                    </Route>
                     <Route path="/">
                         <Dashboard />
                     </Route>

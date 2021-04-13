@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="card background color" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="create newtime component">
+      <change beforePath="$PROJECT_DIR$/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,14 +98,7 @@
       <workItem from="1618025818041" duration="2938000" />
       <workItem from="1618050296825" duration="1348000" />
       <workItem from="1618066554392" duration="167000" />
-      <workItem from="1618284478914" duration="1312000" />
-    </task>
-    <task id="LOCAL-00062" summary="add theme support for login">
-      <created>1615790585401</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1615790585401</updated>
+      <workItem from="1618284478914" duration="1651000" />
     </task>
     <task id="LOCAL-00063" summary="add theme support for ConnectionLost.tsx">
       <created>1615790966608</created>
@@ -441,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618285820877</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="create newtime component">
+      <created>1618285953524</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1618285953524</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +464,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add register api" />
     <MESSAGE value="user can register" />
     <MESSAGE value="change message" />
     <MESSAGE value="add theme" />
@@ -487,6 +488,7 @@
     <MESSAGE value="user can create label" />
     <MESSAGE value="card will show data" />
     <MESSAGE value="card background color" />
-    <option name="LAST_COMMIT_MESSAGE" value="card background color" />
+    <MESSAGE value="create newtime component" />
+    <option name="LAST_COMMIT_MESSAGE" value="create newtime component" />
   </component>
 </project>
