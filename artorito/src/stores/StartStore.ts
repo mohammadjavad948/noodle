@@ -5,7 +5,7 @@ interface StartStore extends State {
     set: (start: boolean) => void
 }
 
-export const useTimeStore = create<StartStore>(set => ({
+export const useStartStore = create<StartStore>(set => ({
     start: false,
     set: (start: boolean) => {
         set({start});
