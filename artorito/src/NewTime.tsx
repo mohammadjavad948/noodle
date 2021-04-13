@@ -3,14 +3,16 @@ import style from './NewTime.module.css';
 import {Button, Fab, Icon} from "@material-ui/core";
 import {useSpring, animated} from "react-spring";
 import {green} from "@material-ui/core/colors";
+import {useTimeStore} from "./stores/TimeStore";
+import {useStartStore} from "./stores/StartStore";
+import {useIntervalStore} from "./stores/IntervalStore";
 
 export default function NewTime(){
 
-    const [time, setTime] = useState(0);
-    const [start, setStart] = useState(false);
-    const [interval, changeInterval] = useState();
+    const {time, update, set: setTime} = useTimeStore();
+    const {start, set: setStart} = useStartStore();
+    const {interval, set: changeInterval} = useIntervalStore();
 
-    let ref = useRef(0);
 
     const animation = useSpring({
         height: start ? '70vh' : '40vh'
@@ -21,9 +23,7 @@ export default function NewTime(){
 
         const interval = setInterval(() => {
 
-            ref.current = ref.current + 100;
-
-            setTime(ref.current);
+            update();
 
         }, 100);
 
@@ -45,6 +45,7 @@ export default function NewTime(){
     }
 
     function stop(){
+        // @ts-ignore
         clearInterval(interval);
 
         setStart(false);
@@ -52,9 +53,8 @@ export default function NewTime(){
 
     function reset(){
 
+        // @ts-ignore
         clearInterval(interval);
-
-        ref.current = 0;
 
         setTime(0);
 
