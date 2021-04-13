@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import DashboardCard from "./components/LabelCard";
 import {useLabelsStore} from "./stores/LabelsStore";
-import {Button, Card, TextField, Typography} from "@material-ui/core";
+import {Button, Card, TextField, Typography, useTheme} from "@material-ui/core";
 import {useTokenStore} from "./stores/TokenStore";
 import {createLabel} from "./api/api";
 
@@ -25,6 +25,8 @@ function NewLabelCard(){
     const [name, setName] = useState('');
     const [color, setColor] = useState('#000000');
 
+    const theme = useTheme();
+
     const {token} = useTokenStore();
 
     function save(){
@@ -41,6 +43,7 @@ function NewLabelCard(){
         <Card
             variant={"outlined"}
             className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3 d-flex flex-column align-items-center justify-content-center"
+            style={{background: theme.palette.background.default}}
         >
             <Typography variant={"body1"} className="mt-2">new Label</Typography>
             <TextField label="name" variant="outlined" onChange={(e) =>  {setName(e.target.value)}} className="mt-4" />
