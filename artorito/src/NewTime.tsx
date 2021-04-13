@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import style from './NewTime.module.css';
 import {Button, Fab, Icon} from "@material-ui/core";
 import {useSpring, animated} from "react-spring";
