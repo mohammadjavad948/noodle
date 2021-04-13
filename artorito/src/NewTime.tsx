@@ -1,7 +1,6 @@
 import React, {useRef, useState} from 'react';
 import style from './NewTime.module.css';
 import {Button, Icon} from "@material-ui/core";
-import {green} from "@material-ui/core/colors";
 
 export default function NewTime(){
 
@@ -48,23 +47,11 @@ export default function NewTime(){
     return (
         <div className={style.container}>
             <div className={style.time}>
-                {time === 0 ? <BigStart click={run}/> : msToTime(time)}
+                {msToTime(time)}
             </div>
 
             {start ? <Stop click={stop}/> : <Start click={run}/>}
         </div>
-    )
-}
-
-// @ts-ignore
-function BigStart({click}){
-
-    return (
-        <Button onClick={click} size={"large"} variant={"outlined"}>
-            <Icon fontSize={"large"} style={{color: green[500]}}>
-                play_arrow
-            </Icon>
-        </Button>
     )
 }
 
