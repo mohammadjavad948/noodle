@@ -7,7 +7,9 @@ export default function NewTime(){
 
     return (
         <div className={style.container}>
-            <BigStart />
+            <div className={style.time}>
+                <BigStart />
+            </div>
         </div>
     )
 }
