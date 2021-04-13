@@ -1,7 +1,8 @@
 import React, {useRef, useState} from 'react';
 import style from './NewTime.module.css';
-import {Button, Icon} from "@material-ui/core";
+import {Button, Fab, Icon} from "@material-ui/core";
 import {useSpring, animated} from "react-spring";
+import {green} from "@material-ui/core/colors";
 
 export default function NewTime(){
 
@@ -70,6 +71,8 @@ export default function NewTime(){
                 {start ? <Stop click={stop}/> : <Start click={run}/>}
                 {start ? '' : <Reset click={reset}/>}
             </div>
+
+            <Save time={time} start={start}/>
         </div>
     )
 }
@@ -106,5 +109,23 @@ function Reset({click}){
                 replay
             </Icon>
         </Button>
+    )
+}
+
+// @ts-ignore
+function Save({start, time}){
+
+    const animation = useSpring({
+        bottom: !start && time !== 0 ? '20px' : '-80px'
+    });
+
+    return (
+        <animated.div style={animation} className={style.fab}>
+            <Fab style={{background: green[500]}}>
+                <Icon>
+                    done
+                </Icon>
+            </Fab>
+        </animated.div>
     )
 }

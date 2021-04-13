@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="remove big button">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add reset button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewTime.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NewTime.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,21 +102,7 @@
       <workItem from="1618050296825" duration="1348000" />
       <workItem from="1618066554392" duration="167000" />
       <workItem from="1618284478914" duration="2664000" />
-      <workItem from="1618305827419" duration="4039000" />
-    </task>
-    <task id="LOCAL-00072" summary="smother transition">
-      <created>1615812539255</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1615812539255</updated>
-    </task>
-    <task id="LOCAL-00073" summary="change welcome">
-      <created>1615812694348</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1615812694348</updated>
+      <workItem from="1618305827419" duration="4767000" />
     </task>
     <task id="LOCAL-00074" summary="add env">
       <created>1617877674584</created>
@@ -446,7 +433,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618309517259</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="some animation">
+      <created>1618310066293</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1618310066296</updated>
+    </task>
+    <task id="LOCAL-00122" summary="add reset button">
+      <created>1618310290367</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1618310290368</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,8 +468,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add useEffect" />
-    <MESSAGE value="get all labels" />
     <MESSAGE value="map the labels" />
     <MESSAGE value="remove log" />
     <MESSAGE value="bug fix" />
@@ -492,6 +491,8 @@
     <MESSAGE value="add container" />
     <MESSAGE value="add timer" />
     <MESSAGE value="remove big button" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove big button" />
+    <MESSAGE value="some animation" />
+    <MESSAGE value="add reset button" />
+    <option name="LAST_COMMIT_MESSAGE" value="add reset button" />
   </component>
 </project>
