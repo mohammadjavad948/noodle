@@ -2,10 +2,15 @@ import {Document, model, Schema} from "mongoose";
 
 export interface TimeI extends Document{
     time: number
+    date: string
 }
 
 const schema = new Schema({
-    time: Number
+    time: Number,
+    date: {
+        type: Date,
+        default: new Date().toLocaleDateString()
+    }
 });
 
 
