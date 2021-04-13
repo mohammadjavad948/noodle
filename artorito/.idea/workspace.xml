@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="hmmm" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add image navbar">
+      <change afterPath="$PROJECT_DIR$/src/stores/IntervalStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -47,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -99,13 +103,9 @@
       <workItem from="1618066554392" duration="167000" />
       <workItem from="1618284478914" duration="2664000" />
       <workItem from="1618305827419" duration="5129000" />
-    </task>
-    <task id="LOCAL-00078" summary="it really connect to server">
-      <created>1617957975408</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1617957975408</updated>
+      <workItem from="1618319343382" duration="284000" />
+      <workItem from="1618323695658" duration="1216000" />
+      <workItem from="1618335422136" duration="343000" />
     </task>
     <task id="LOCAL-00079" summary="comment">
       <created>1617958111224</created>
@@ -443,7 +443,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618311099510</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="add image navbar">
+      <created>1618319619082</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1618319619083</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +471,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="change label" />
     <MESSAGE value="add react color" />
     <MESSAGE value="remove react color" />
     <MESSAGE value="add color" />
@@ -489,6 +495,7 @@
     <MESSAGE value="add icon to navbar" />
     <MESSAGE value="remove unused import" />
     <MESSAGE value="hmmm" />
-    <option name="LAST_COMMIT_MESSAGE" value="hmmm" />
+    <MESSAGE value="add image navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="add image navbar" />
   </component>
 </project>
