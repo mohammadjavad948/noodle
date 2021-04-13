@@ -9,7 +9,7 @@ const schema = new Schema({
     time: Number,
     date: {
         type: Date,
-        default: new Date().toLocaleDateString()
+        default: new Date().toDateString()
     }
 });
 
