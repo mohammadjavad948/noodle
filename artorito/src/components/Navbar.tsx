@@ -2,9 +2,8 @@ import React from 'react';
 import {
     AppBar,
     Avatar,
-    Button,
-    createStyles, FormControlLabel, Icon, IconButton,
-    makeStyles, Switch,
+    createStyles, Icon, IconButton,
+    makeStyles,
     Theme,
     Toolbar,
     Typography
