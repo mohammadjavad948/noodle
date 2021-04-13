@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add container">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="remove big button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewTime.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NewTime.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,21 +101,7 @@
       <workItem from="1618050296825" duration="1348000" />
       <workItem from="1618066554392" duration="167000" />
       <workItem from="1618284478914" duration="2664000" />
-      <workItem from="1618305827419" duration="3338000" />
-    </task>
-    <task id="LOCAL-00070" summary="change dark mode toggle">
-      <created>1615807503015</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1615807503019</updated>
-    </task>
-    <task id="LOCAL-00071" summary="add sign up and a bunch of transition">
-      <created>1615811538356</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1615811538356</updated>
+      <workItem from="1618305827419" duration="4039000" />
     </task>
     <task id="LOCAL-00072" summary="smother transition">
       <created>1615812539255</created>
@@ -447,7 +432,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618307546900</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="add timer">
+      <created>1618309382113</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1618309382113</updated>
+    </task>
+    <task id="LOCAL-00120" summary="remove big button">
+      <created>1618309517259</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1618309517259</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,8 +467,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add label api" />
-    <MESSAGE value="create LabelStore" />
     <MESSAGE value="add useEffect" />
     <MESSAGE value="get all labels" />
     <MESSAGE value="map the labels" />
@@ -493,6 +490,8 @@
     <MESSAGE value="add container style" />
     <MESSAGE value="add big button" />
     <MESSAGE value="add container" />
-    <option name="LAST_COMMIT_MESSAGE" value="add container" />
+    <MESSAGE value="add timer" />
+    <MESSAGE value="remove big button" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove big button" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 import React, {useRef, useState} from 'react';
 import style from './NewTime.module.css';
 import {Button, Icon} from "@material-ui/core";
+import {useSpring, animated} from "react-spring";
 
 export default function NewTime(){
 
@@ -9,6 +10,10 @@ export default function NewTime(){
     const [interval, changeInterval] = useState();
 
     let ref = useRef(0);
+
+    const animation = useSpring({
+        height: start ? '70vh' : '40vh'
+    });
 
     function run(){
         setStart(true);
@@ -46,9 +51,9 @@ export default function NewTime(){
 
     return (
         <div className={style.container}>
-            <div className={style.time}>
+            <animated.div style={animation} className={style.time}>
                 {msToTime(time)}
-            </div>
+            </animated.div>
 
             {start ? <Stop click={stop}/> : <Start click={run}/>}
         </div>
