@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add newtime to router">
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="user can navigate">
+      <change afterPath="$PROJECT_DIR$/src/NewTime.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +99,8 @@
       <workItem from="1618025818041" duration="2938000" />
       <workItem from="1618050296825" duration="1348000" />
       <workItem from="1618066554392" duration="167000" />
-      <workItem from="1618284478914" duration="2013000" />
-    </task>
-    <task id="LOCAL-00064" summary="create ThemeStore">
-      <created>1615791179777</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1615791179777</updated>
+      <workItem from="1618284478914" duration="2664000" />
+      <workItem from="1618305827419" duration="630000" />
     </task>
     <task id="LOCAL-00065" summary="add theme provider to app">
       <created>1615791428010</created>
@@ -443,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618286309586</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="user can navigate">
+      <created>1618286835310</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1618286835310</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +466,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="change message" />
     <MESSAGE value="add theme" />
     <MESSAGE value="login will get theme from material ui" />
     <MESSAGE value="change card color" />
@@ -489,6 +490,7 @@
     <MESSAGE value="card background color" />
     <MESSAGE value="create newtime component" />
     <MESSAGE value="add newtime to router" />
-    <option name="LAST_COMMIT_MESSAGE" value="add newtime to router" />
+    <MESSAGE value="user can navigate" />
+    <option name="LAST_COMMIT_MESSAGE" value="user can navigate" />
   </component>
 </project>
