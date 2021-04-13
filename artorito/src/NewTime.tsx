@@ -4,7 +4,7 @@ import style from './NewTime.module.css';
 export default function NewTime(){
 
     return (
-        <div>
+        <div className={style.container}>
 
         </div>
     )
