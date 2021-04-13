@@ -12,6 +12,7 @@ import {green, red} from "@material-ui/core/colors";
 import {useTokenStore} from "../stores/TokenStore";
 import {useThemeStore} from "../stores/ThemeStore";
 import {useHistory} from 'react-router-dom';
+import image from '../noodle.png';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -56,7 +57,7 @@ function Navbar(){
         <div className={classes.root}>
             <AppBar position="static" color={"transparent"}>
                 <Toolbar>
-                    <Avatar variant={"rounded"} style={{marginRight: 10, backgroundColor: green[500]}}>N</Avatar>
+                    <Avatar src={image} variant={"rounded"} style={{marginRight: 10, backgroundColor: green[500]}} />
                     <Typography variant="h6" className={classes.title}>
                         Noodle
                     </Typography>
