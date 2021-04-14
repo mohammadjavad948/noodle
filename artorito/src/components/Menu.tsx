@@ -5,6 +5,10 @@ interface Props{
     x: number
     y: number
     hide: () => void
+    content: {
+        title: string | React.ElementType
+        click: () => void
+    }[]
 }
 
 export default function ContextMenu(props: Props){
@@ -44,7 +48,9 @@ export default function ContextMenu(props: Props){
                 background: theme.palette.background.default,
                 padding: '8px'
             }} ref={ref}>
-            <MenuItem>test</MenuItem>
+            {
+                props.content.map((cont, index) => <MenuItem key={index} onClick={cont.click}>{cont.title}</MenuItem>)
+            }
         </div>
     )
 }
