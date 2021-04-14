@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="time manager style">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="hidden animation">
+      <change beforePath="$PROJECT_DIR$/src/components/TimeManager.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeManager.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TimeManager.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeManager.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,14 +106,7 @@
       <workItem from="1618319343382" duration="284000" />
       <workItem from="1618323695658" duration="1216000" />
       <workItem from="1618335422136" duration="2052000" />
-      <workItem from="1618376904911" duration="5542000" />
-    </task>
-    <task id="LOCAL-00096" summary="add useEffect">
-      <created>1617986793962</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1617986793962</updated>
+      <workItem from="1618376904911" duration="5852000" />
     </task>
     <task id="LOCAL-00097" summary="get all labels">
       <created>1617986987329</created>
@@ -451,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618383859353</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="hidden animation">
+      <created>1618384240442</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1618384240442</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +472,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add timer" />
     <MESSAGE value="remove big button" />
     <MESSAGE value="some animation" />
     <MESSAGE value="add reset button" />
@@ -497,6 +496,7 @@
     <MESSAGE value="import style" />
     <MESSAGE value="style" />
     <MESSAGE value="time manager style" />
-    <option name="LAST_COMMIT_MESSAGE" value="time manager style" />
+    <MESSAGE value="hidden animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="hidden animation" />
   </component>
 </project>

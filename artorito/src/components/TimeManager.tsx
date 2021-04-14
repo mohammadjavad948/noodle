@@ -13,8 +13,8 @@ export default function TimeManager(){
     const [hidden, setHidden] = useState(true);
 
     const animation = useSpring({
-        display: time === 0 ? 'none' : 'block',
-        right: hidden ? '-175px' : '10px'
+        display: time === 0 ? 'none' : 'flex',
+        right: hidden ? '-120px' : '10px'
     });
 
     function changeHidden(){
@@ -33,26 +33,27 @@ export default function TimeManager(){
                         </Icon>
                 }
             </IconButton>
-            <IconButton>
-                <Icon fontSize={"small"}>
-                    stop
-                </Icon>
-            </IconButton>
-            <IconButton>
-                <Icon fontSize={"small"}>
-                    replay
-                </Icon>
-            </IconButton>
-            <IconButton>
-                <Icon fontSize={"small"}>
-                    done
-                </Icon>
-            </IconButton>
-            <IconButton>
-                <Icon fontSize={"small"}>
-                    play_arrow
-                </Icon>
-            </IconButton>
+            {
+                start ? <IconButton>
+                    <Icon fontSize={"small"}>
+                        stop
+                    </Icon>
+                </IconButton> : ''
+            }
+            {
+                !start ? <IconButton>
+                    <Icon fontSize={"small"}>
+                        replay
+                    </Icon>
+                </IconButton> : ''
+            }
+            {
+                !start ? <IconButton>
+                    <Icon fontSize={"small"}>
+                        play_arrow
+                    </Icon>
+                </IconButton> : ''
+            }
         </animated.div>
     )
 }

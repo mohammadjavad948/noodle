@@ -6,5 +6,7 @@
     box-shadow: 0 0 2px 0 rgba(160, 160, 160, 0.5);
     border-radius: 5px;
     display: flex;
+    justify-content: space-between;
+    width: 175px;
     gap: 5px;
 }
