@@ -1,6 +1,7 @@
 import React from 'react';
 import {animated, useSpring} from 'react-spring';
 import {useTimeStore} from "../stores/TimeStore";
+import style from './TimeManager.module.css';
 
 export default function TimeManager(){
 
@@ -11,7 +12,7 @@ export default function TimeManager(){
     });
 
     return (
-        <animated.div>
+        <animated.div className={style.container}>
 
         </animated.div>
     )
