@@ -82,6 +82,14 @@ export default function DashboardCard(props: DashboardCardI) {
         console.log(e);
     }
 
+    function hideContext(){
+        setMouse({
+            open: false,
+            x: 0,
+            y: 0
+        })
+    }
+
     return (
         <Card
             variant={"outlined"}
@@ -98,7 +106,7 @@ export default function DashboardCard(props: DashboardCardI) {
                     ref={graphCanvas}
                 />
             </CardContent>
-            <ContextMenu {...mouse}/>
+            {mouse.open ? <ContextMenu hide={hideContext} {...mouse}/> : ''}
         </Card>
     )
 }
