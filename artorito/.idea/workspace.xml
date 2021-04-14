@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="color">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add contexmenu event">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LabelCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LabelCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/env.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/env.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -106,14 +108,8 @@
       <workItem from="1618323695658" duration="1216000" />
       <workItem from="1618335422136" duration="2052000" />
       <workItem from="1618376904911" duration="6415000" />
-      <workItem from="1618401199245" duration="2348000" />
-    </task>
-    <task id="LOCAL-00105" summary="add color">
-      <created>1618026782233</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1618026782241</updated>
+      <workItem from="1618401199245" duration="3966000" />
+      <workItem from="1618408532139" duration="537000" />
     </task>
     <task id="LOCAL-00106" summary="add state for form">
       <created>1618027548710</created>
@@ -451,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618403221238</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="add contexmenu event">
+      <created>1618403688869</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1618403688869</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +475,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create time Store" />
     <MESSAGE value="create start store" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="add global time tracker and bug fix" />
@@ -497,6 +499,7 @@
     <MESSAGE value="change stop to pause" />
     <MESSAGE value="add select" />
     <MESSAGE value="color" />
-    <option name="LAST_COMMIT_MESSAGE" value="color" />
+    <MESSAGE value="add contexmenu event" />
+    <option name="LAST_COMMIT_MESSAGE" value="add contexmenu event" />
   </component>
 </project>

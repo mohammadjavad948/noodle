@@ -1,6 +1,7 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {Card, CardContent, Typography, useTheme} from "@material-ui/core";
 import Chart from "chart.js";
+import ContextMenu from "./Menu";
 
 interface DashboardCardI {
     data: any
@@ -11,6 +12,8 @@ export default function DashboardCard(props: DashboardCardI) {
     const graphCanvas = useRef() as React.MutableRefObject<HTMLCanvasElement>;
 
     const theme = useTheme();
+
+    const [mouse, setMouse] = useState({open: false, x: 0, y: 0});
 
     useEffect(() => {
         buildChart();
@@ -69,6 +72,13 @@ export default function DashboardCard(props: DashboardCardI) {
 
     function contextM(e: any){
         e.preventDefault();
+
+        setMouse({
+            open: true,
+            x: e.pageX,
+            y: e.pageY
+        });
+
         console.log(e);
     }
 
@@ -88,6 +98,7 @@ export default function DashboardCard(props: DashboardCardI) {
                     ref={graphCanvas}
                 />
             </CardContent>
+            <ContextMenu {...mouse}/>
         </Card>
     )
 }

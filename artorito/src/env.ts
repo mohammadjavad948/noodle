@@ -1,1 +1,1 @@
-export const ENDPOINT = 'https://immagonnakillyou.herokuapp.com'
+export const ENDPOINT = 'https://whispering-stream-80743.herokuapp.com'
