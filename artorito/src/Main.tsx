@@ -6,6 +6,7 @@ import {allLabels} from "./api/api";
 import {useTokenStore} from "./stores/TokenStore";
 import {useLabelsStore} from "./stores/LabelsStore";
 import NewTime from "./NewTime";
+import TimeManager from "./components/TimeManager";
 
 export default function Main() {
 
@@ -35,6 +36,8 @@ export default function Main() {
                     </Route>
                 </Switch>
             </div>
+
+            <TimeManager />
         </BrowserRouter>
     )
 }
