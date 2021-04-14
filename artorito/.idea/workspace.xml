@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="some background">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add color">
+      <change beforePath="$PROJECT_DIR$/src/NewTime.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimeManager.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeManager.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

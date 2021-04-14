@@ -94,7 +94,7 @@ function Stop({click}){
     return (
         <Button onClick={click} variant={"outlined"}>
             <Icon>
-                stop
+                pause
             </Icon>
         </Button>
     )

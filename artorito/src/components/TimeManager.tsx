@@ -72,7 +72,7 @@ export default function TimeManager(){
             {
                 start ? <IconButton onClick={stop}>
                     <Icon fontSize={"small"} style={{color: red[500]}}>
-                        stop
+                        pause
                     </Icon>
                 </IconButton> : ''
             }
