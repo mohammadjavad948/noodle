@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     AppBar,
-    Avatar,
+    Avatar, Button,
     createStyles, Icon, IconButton,
     makeStyles,
     Theme,
@@ -13,6 +13,7 @@ import {useTokenStore} from "../stores/TokenStore";
 import {useThemeStore} from "../stores/ThemeStore";
 import {useHistory} from 'react-router-dom';
 import image from '../noodle.png';
+import {useTimeStore} from "../stores/TimeStore";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -30,6 +31,8 @@ function Navbar(){
     const classes = useStyles();
     const {set: setToken} = useTokenStore();
     const {theme, dark, light} = useThemeStore();
+
+    const {time} = useTimeStore();
 
     const history = useHistory();
 
@@ -53,6 +56,31 @@ function Navbar(){
         }
     }
 
+    function msToTime(duration: number) {
+        let milliseconds = (duration % 1000) / 100,
+            seconds: string | number = Math.floor((duration / 1000) % 60),
+            minutes: string | number = Math.floor((duration / (1000 * 60)) % 60),
+            hours: string | number = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+        let output = '';
+
+        if (+hours !== 0){
+            output = hours + ":" + minutes;
+        }else if (+minutes !== 0){
+            output = minutes + ":" + seconds;
+        }else if (+seconds !== 0){
+            output = seconds + "." + milliseconds;
+        }else {
+            output = milliseconds.toString();
+        }
+
+        return output
+    }
+
     return (
         <div className={classes.root}>
             <AppBar position="static" color={"transparent"}>
@@ -73,11 +101,17 @@ function Navbar(){
                                 </Icon>
                         }
                     </IconButton>
-                    <IconButton onClick={add}>
-                        <Icon>
-                            add
-                        </Icon>
-                    </IconButton>
+                    {
+                        time === 0 ?
+                            <IconButton onClick={add}>
+                                <Icon>
+                                    add
+                                </Icon>
+                            </IconButton> :
+                            <Button onClick={add}>
+                                {msToTime(time)}
+                            </Button>
+                    }
                     <IconButton onClick={dashboard}>
                         <Icon>
                             dashboard
