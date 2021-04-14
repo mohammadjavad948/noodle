@@ -9,7 +9,9 @@ import * as cors from 'cors';
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: "*"
+}));
 
 app.get('/status', (req, res) => {
     return res.send({
