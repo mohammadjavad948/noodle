@@ -48,7 +48,7 @@ function App() {
     });
 
     return (
-        <div>
+        <div style={{overflow: 'hidden'}}>
             <ThemeProvider theme={themeSaved === 'light' ? light : dark}>
                 <CssBaseline />
                 {token !== '' ? <Main /> : <Login />}

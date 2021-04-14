@@ -7,7 +7,7 @@ interface Props{
     hide: () => void
     content: {
         title: string | React.ElementType
-        click: () => void
+        click: () => any
     }[]
 }
 

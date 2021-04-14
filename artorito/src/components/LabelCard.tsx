@@ -78,8 +78,6 @@ export default function DashboardCard(props: DashboardCardI) {
             x: e.pageX,
             y: e.pageY
         });
-
-        console.log(e);
     }
 
     function hideContext(){
@@ -106,7 +104,7 @@ export default function DashboardCard(props: DashboardCardI) {
                     ref={graphCanvas}
                 />
             </CardContent>
-            {mouse.open ? <ContextMenu hide={hideContext} {...mouse}/> : ''}
+            {mouse.open ? <ContextMenu content={[{title: 'delete', click: () => console.log('delete')}]} hide={hideContext} {...mouse}/> : ''}
         </Card>
     )
 }
