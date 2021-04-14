@@ -1,11 +1,12 @@
 import React from 'react';
 import style from './NewTime.module.css';
-import {Button, Fab, Icon} from "@material-ui/core";
+import {Button, Fab, FormControl, Icon, MenuItem, Select} from "@material-ui/core";
 import {useSpring, animated} from "react-spring";
 import {green} from "@material-ui/core/colors";
 import {useTimeStore} from "./stores/TimeStore";
 import {useStartStore} from "./stores/StartStore";
 import {useIntervalStore} from "./stores/IntervalStore";
+import {useLabelsStore} from "./stores/LabelsStore";
 
 export default function NewTime(){
 
@@ -13,6 +14,7 @@ export default function NewTime(){
     const {start, set: setStart} = useStartStore();
     const {interval, set: changeInterval} = useIntervalStore();
 
+    const {labels} = useLabelsStore();
 
     const animation = useSpring({
         height: start ? '70vh' : '40vh'
@@ -66,6 +68,15 @@ export default function NewTime(){
             <animated.div style={animation} className={style.time}>
                 {msToTime(time)}
             </animated.div>
+
+            <FormControl variant={"outlined"} style={{marginBottom: '20px'}}>
+                <Select defaultValue="none">
+                    <MenuItem value="none">none</MenuItem>
+                    {
+                        labels.map((label, index) => <MenuItem key={index} selected={index === 0} value={label._id}>{label.name}</MenuItem>)
+                    }
+                </Select>
+            </FormControl>
 
             <div style={{display: 'flex', gap: '20px'}}>
                 {start ? <Stop click={stop}/> : <Start click={run}/>}

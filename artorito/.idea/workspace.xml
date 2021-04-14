@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add color">
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="change stop to pause">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/NewTime.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TimeManager.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TimeManager.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,21 +107,7 @@
       <workItem from="1618323695658" duration="1216000" />
       <workItem from="1618335422136" duration="2052000" />
       <workItem from="1618376904911" duration="6415000" />
-      <workItem from="1618401199245" duration="313000" />
-    </task>
-    <task id="LOCAL-00101" summary="add new label card">
-      <created>1617988910064</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1617988910065</updated>
-    </task>
-    <task id="LOCAL-00102" summary="change label">
-      <created>1617989088872</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1617989088872</updated>
+      <workItem from="1618401199245" duration="1315000" />
     </task>
     <task id="LOCAL-00103" summary="add react color">
       <created>1617989672494</created>
@@ -452,7 +438,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618384821807</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="add color">
+      <created>1618401648894</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1618401648894</updated>
+    </task>
+    <task id="LOCAL-00151" summary="change stop to pause">
+      <created>1618401804276</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1618401804276</updated>
+    </task>
+    <option name="localTasksCounter" value="152" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,8 +473,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add icon to navbar" />
-    <MESSAGE value="hmmm" />
     <MESSAGE value="add image navbar" />
     <MESSAGE value="create interval Store" />
     <MESSAGE value="create time Store" />
@@ -498,6 +496,8 @@
     <MESSAGE value="time manager done" />
     <MESSAGE value="add dot(.)" />
     <MESSAGE value="some background" />
-    <option name="LAST_COMMIT_MESSAGE" value="some background" />
+    <MESSAGE value="add color" />
+    <MESSAGE value="change stop to pause" />
+    <option name="LAST_COMMIT_MESSAGE" value="change stop to pause" />
   </component>
 </project>
