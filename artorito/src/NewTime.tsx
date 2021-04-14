@@ -73,7 +73,7 @@ export default function NewTime(){
                 <Select defaultValue="none">
                     <MenuItem value="none">none</MenuItem>
                     {
-                        labels.map((label, index) => <MenuItem key={index} selected={index === 0} value={label._id}>{label.name}</MenuItem>)
+                        labels.map((label, index) => <MenuItem key={index} selected={index === 0} value={label._id} style={{color: label.color}}>{label.name}</MenuItem>)
                     }
                 </Select>
             </FormControl>
