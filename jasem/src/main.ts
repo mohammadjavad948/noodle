@@ -13,6 +13,8 @@ app.use(cors({
     origin: "*"
 }));
 
+app.options('*', cors())
+
 app.get('/status', (req, res) => {
     return res.send({
         status: process.env.STATUS
