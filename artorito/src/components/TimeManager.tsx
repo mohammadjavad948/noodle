@@ -2,11 +2,13 @@ import React, {useState} from 'react';
 import {animated, useSpring} from 'react-spring';
 import {useTimeStore} from "../stores/TimeStore";
 import style from './TimeManager.module.css';
-import {Icon, IconButton} from "@material-ui/core";
+import {Icon, IconButton, useTheme} from "@material-ui/core";
 import {useStartStore} from "../stores/StartStore";
 import {useIntervalStore} from "../stores/IntervalStore";
 
 export default function TimeManager(){
+
+    const theme = useTheme();
 
     const {time, update, set: setTime} = useTimeStore();
     const {start, set: setStart} = useStartStore();
@@ -16,7 +18,8 @@ export default function TimeManager(){
 
     const animation = useSpring({
         display: time === 0 ? 'none' : 'flex',
-        right: hidden ? '-120px' : '10px'
+        right: hidden ? '-120px' : '10px',
+        background: theme.palette.background.default
     });
 
     function run(){
