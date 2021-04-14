@@ -13,7 +13,7 @@ export default function TimeManager(){
 
     return (
         <animated.div className={style.container}>
-
+            test
         </animated.div>
     )
 }
