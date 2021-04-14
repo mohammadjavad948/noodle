@@ -88,6 +88,15 @@ export default function DashboardCard(props: DashboardCardI) {
         })
     }
 
+    const contextMenu = [
+        {
+            title: 'remove',
+            click: () => {
+                console.log('remove')
+            }
+        }
+    ]
+
     return (
         <Card
             variant={"outlined"}
@@ -104,7 +113,7 @@ export default function DashboardCard(props: DashboardCardI) {
                     ref={graphCanvas}
                 />
             </CardContent>
-            {mouse.open ? <ContextMenu content={[{title: 'delete', click: () => console.log('delete')}]} hide={hideContext} {...mouse}/> : ''}
+            {mouse.open ? <ContextMenu content={contextMenu} hide={hideContext} {...mouse}/> : ''}
         </Card>
     )
 }
