@@ -46,7 +46,7 @@ export default function ContextMenu(props: Props){
                 borderRadius: '8px',
                 boxShadow: '0 0 3px 0 #9c9c9c',
                 background: theme.palette.background.default,
-                padding: '8px'
+                padding: '8px 0'
             }} ref={ref}>
             {
                 props.content.map((cont, index) => <MenuItem key={index} onClick={cont.click}>{cont.title}</MenuItem>)
