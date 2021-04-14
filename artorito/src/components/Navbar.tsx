@@ -69,7 +69,7 @@ function Navbar(){
         }else if (+minutes !== 0){
             output = minutes + "M " + seconds;
         }else if (+seconds !== 0){
-            output = seconds + " " + milliseconds;
+            output = seconds + "." + milliseconds;
         }else {
             output = milliseconds.toString();
         }
