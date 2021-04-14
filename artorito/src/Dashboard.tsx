@@ -11,7 +11,7 @@ export default function Dashboard() {
     const {labels} = useLabelsStore();
 
     return (
-        <div className="row" style={{gap: '10px'}}>
+        <div className="row">
 
             {labels.map((data, index) => <DashboardCard data={data} key={index}/>)}
 
