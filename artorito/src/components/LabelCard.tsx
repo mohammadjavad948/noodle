@@ -67,8 +67,18 @@ export default function DashboardCard(props: DashboardCardI) {
         return all;
     }
 
+    function contextM(e: any){
+        e.preventDefault();
+        console.log(e);
+    }
+
     return (
-        <Card variant={"outlined"} style={{background: theme.palette.background.default}} className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3">
+        <Card
+            variant={"outlined"}
+            style={{background: theme.palette.background.default}}
+            className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3"
+            onContextMenu={contextM}
+        >
             <CardContent>
                 <Typography style={{textAlign: 'center', fontSize: '20px'}}>
                     {props.data.name}
