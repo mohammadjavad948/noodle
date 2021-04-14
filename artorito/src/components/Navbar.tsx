@@ -62,18 +62,14 @@ function Navbar(){
             minutes: string | number = Math.floor((duration / (1000 * 60)) % 60),
             hours: string | number = Math.floor((duration / (1000 * 60 * 60)) % 24);
 
-        hours = (hours < 10) ? "0" + hours : hours;
-        minutes = (minutes < 10) ? "0" + minutes : minutes;
-        seconds = (seconds < 10) ? "0" + seconds : seconds;
-
         let output = '';
 
         if (+hours !== 0){
-            output = hours + ":" + minutes;
+            output = hours + "H " + minutes + "M";
         }else if (+minutes !== 0){
-            output = minutes + ":" + seconds;
+            output = minutes + "M " + seconds;
         }else if (+seconds !== 0){
-            output = seconds + "." + milliseconds;
+            output = seconds + " " + milliseconds;
         }else {
             output = milliseconds.toString();
         }
