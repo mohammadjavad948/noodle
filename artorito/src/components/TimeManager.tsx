@@ -5,6 +5,7 @@ import style from './TimeManager.module.css';
 import {Icon, IconButton, useTheme} from "@material-ui/core";
 import {useStartStore} from "../stores/StartStore";
 import {useIntervalStore} from "../stores/IntervalStore";
+import {green, purple, red} from "@material-ui/core/colors";
 
 export default function TimeManager(){
 
@@ -70,21 +71,21 @@ export default function TimeManager(){
             </IconButton>
             {
                 start ? <IconButton onClick={stop}>
-                    <Icon fontSize={"small"}>
+                    <Icon fontSize={"small"} style={{color: red[500]}}>
                         stop
                     </Icon>
                 </IconButton> : ''
             }
             {
                 !start ? <IconButton onClick={reset}>
-                    <Icon fontSize={"small"}>
+                    <Icon fontSize={"small"} style={{color: purple[300]}}>
                         replay
                     </Icon>
                 </IconButton> : ''
             }
             {
                 !start ? <IconButton onClick={run}>
-                    <Icon fontSize={"small"}>
+                    <Icon fontSize={"small"} style={{color: green[300]}}>
                         play_arrow
                     </Icon>
                 </IconButton> : ''
