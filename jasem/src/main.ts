@@ -30,7 +30,7 @@ const io = IOServer
     .use(verifySocket)
     .on('connection', (socket) => {
 
-        console.log('someone connected' + socket.decoded)
+        console.log('someone connected with id : ' + socket.decoded)
     })
 
 app.options('*', cors())
