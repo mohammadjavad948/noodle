@@ -88,12 +88,15 @@ export default function DashboardCard(props: DashboardCardI) {
         })
     }
 
+    function remove(){
+        hideContext()
+        console.log('remove')
+    }
+
     const contextMenu = [
         {
             title: 'remove',
-            click: () => {
-                console.log('remove')
-            }
+            click: remove
         }
     ]
 
