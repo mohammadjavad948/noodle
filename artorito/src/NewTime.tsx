@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './NewTime.module.css';
 import {Button, Fab, FormControl, Icon, MenuItem, Select} from "@material-ui/core";
 import {useSpring, animated} from "react-spring";
@@ -15,6 +15,8 @@ export default function NewTime(){
     const {interval, set: changeInterval} = useIntervalStore();
 
     const {labels} = useLabelsStore();
+
+    const [label, setLabel] = useState('none');
 
     const animation = useSpring({
         height: start ? '70vh' : '40vh'
@@ -63,6 +65,10 @@ export default function NewTime(){
         setStart(false);
     }
 
+    function save(){
+        console.log({label, time})
+    }
+
     return (
         <div className={style.container}>
             <animated.div style={animation} className={style.time}>
@@ -70,7 +76,7 @@ export default function NewTime(){
             </animated.div>
 
             <FormControl variant={"outlined"} style={{marginBottom: '20px'}}>
-                <Select defaultValue="none">
+                <Select defaultValue="none" onChange={(e: any) => setLabel(e.target.value)}>
                     <MenuItem value="none">none</MenuItem>
                     {
                         labels.map((label, index) => <MenuItem key={index} selected={index === 0} value={label._id} style={{color: label.color}}>{label.name}</MenuItem>)
@@ -83,7 +89,7 @@ export default function NewTime(){
                 {start ? '' : <Reset click={reset}/>}
             </div>
 
-            <Save time={time} start={start}/>
+            <Save save={save} time={time} start={start}/>
         </div>
     )
 }
@@ -124,7 +130,7 @@ function Reset({click}){
 }
 
 // @ts-ignore
-function Save({start, time}){
+function Save({start, time, save}){
 
     const animation = useSpring({
         bottom: !start && time !== 0 ? '20px' : '-80px'
@@ -132,7 +138,7 @@ function Save({start, time}){
 
     return (
         <animated.div style={animation} className={style.fab}>
-            <Fab style={{background: green[500]}}>
+            <Fab onClick={save} style={{background: green[500]}}>
                 <Icon>
                     done
                 </Icon>
