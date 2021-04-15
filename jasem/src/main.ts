@@ -6,6 +6,7 @@ import {Label} from "./mongo/Label";
 import {Time} from "./mongo/Time";
 require('dotenv').config();
 import * as cors from 'cors';
+import {User} from "./mongo/User";
 const socketIo = require('socket.io');
 
 const app = express();
@@ -28,9 +29,12 @@ const IOServer = socketIo(server, {
 
 const io = IOServer
     .use(verifySocket)
-    .on('connection', (socket) => {
+    .on('connection', async (socket) => {
 
-        console.log('someone connected with id : ' + socket.decoded)
+        await socket.join(socket.decoded._id);
+
+        console.log('someone connected with id : ' + socket.decoded._id);
+
     })
 
 app.options('*', cors())
