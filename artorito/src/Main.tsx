@@ -29,7 +29,11 @@ export default function Main() {
         });
 
         socket.on('connect', () => {
-            console.log('%c [WS]%c authenticated to socket server', 'color: purple', 'color: black')
+            console.log('%c [WS]%c authenticated', 'color: purple', 'color: black')
+        });
+
+        socket.on('disconnect', () => {
+            console.log('%c [WS]%c disconnected', 'color: purple', 'color: red')
         })
 
 
