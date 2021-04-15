@@ -16,7 +16,7 @@ app.use(cors({
 }));
 
 
-const server = app.listen(process.env.PORT || 3000, () => {
+const server = app.listen(process.env.PORT || 4000, () => {
     console.log('server is running')
 });
 
@@ -31,9 +31,11 @@ const io = IOServer
     .use(verifySocket)
     .on('connection', async (socket) => {
 
-        await socket.join(socket.decoded._id);
+        const user = await User.findOne({_id: socket.decoded._id});
+        
+        socket.join(user.username);
 
-        console.log('someone connected with id : ' + socket.decoded._id);
+        console.log('someone connected with id : ' + user.username);
 
     })
 
@@ -76,7 +78,7 @@ app.post('/label', authMiddleware, async (req, res) => {
 
     await user.save();
 
-    io.in(user._id).emit('new-label', label);
+    io.to(user.username).emit('new-label', label);
 
     return res.send({
         label
@@ -98,7 +100,7 @@ app.put('/label/:id', authMiddleware, async (req, res) => {
 
     const emitLabel = await Label.findOne({_id: id}).populate('time').exec();
 
-    io.in(user._id).emit('update-label', emitLabel);
+    io.in(user.username).emit('update-label', emitLabel);
 
     return res.send({
         label
@@ -135,7 +137,7 @@ app.post('/time/new', authMiddleware, async (req, res) => {
 
     const emitLabel = await Label.findOne({_id: label}).populate('time').exec();
 
-    io.in(user._id).emit('update-label', emitLabel);
+    io.in(user.username).emit('update-label', emitLabel);
 
     res.send({
         time: createdTime
