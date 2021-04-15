@@ -56,7 +56,10 @@ export default function DashboardCard(props: DashboardCardI) {
                 legend: {
                     display: false
                 },
-                animation: false
+                animation: false,
+                tooltips: {
+                    enabled: false
+                }
             }
         })
     }
