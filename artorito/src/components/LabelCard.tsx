@@ -15,10 +15,12 @@ export default function DashboardCard(props: DashboardCardI) {
 
     const [mouse, setMouse] = useState({open: false, x: 0, y: 0});
     const [chartData, setChartData] = useState([0, 0, 0, 0, 0, 0, 0]);
+    const [sum, setSum] = useState('');
 
     useEffect(() => {
         buildChart();
         createChartData();
+        createSum();
     });
 
     function buildChart() {
@@ -64,6 +66,35 @@ export default function DashboardCard(props: DashboardCardI) {
                 }
             }
         })
+    }
+
+    function createSum(){
+        let sum = props.data.time.reduce((n: any, next: any) => {
+            return n + next.time
+        }, 0);
+
+        setSum(msToTime(sum));
+    }
+
+    function msToTime(duration: number) {
+        let milliseconds = (duration % 1000) / 100,
+            seconds: string | number = Math.floor((duration / 1000) % 60),
+            minutes: string | number = Math.floor((duration / (1000 * 60)) % 60),
+            hours: string | number = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+        let output = '';
+
+        if (+hours !== 0){
+            output = hours + "H " + minutes + "M";
+        }else if (+minutes !== 0){
+            output = minutes + "M " + seconds + "S";
+        }else if (+seconds !== 0){
+            output = seconds + "." + milliseconds + "S";
+        }else {
+            output = milliseconds.toString();
+        }
+
+        return output
     }
 
     function sortByDate(data: any){
@@ -149,6 +180,7 @@ export default function DashboardCard(props: DashboardCardI) {
                 <Typography style={{textAlign: 'center', fontSize: '20px'}}>
                     {props.data.name}
                 </Typography>
+                <Typography style={{textAlign: 'center'}}>{sum}</Typography>
                 <canvas
                     width={"100%"}
                     ref={graphCanvas}
