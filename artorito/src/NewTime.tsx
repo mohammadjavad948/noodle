@@ -7,12 +7,16 @@ import {useTimeStore} from "./stores/TimeStore";
 import {useStartStore} from "./stores/StartStore";
 import {useIntervalStore} from "./stores/IntervalStore";
 import {useLabelsStore} from "./stores/LabelsStore";
+import {createTime} from "./api/api";
+import {useTokenStore} from "./stores/TokenStore";
 
 export default function NewTime(){
 
     const {time, update, set: setTime} = useTimeStore();
     const {start, set: setStart} = useStartStore();
     const {interval, set: changeInterval} = useIntervalStore();
+
+    const {token} = useTokenStore();
 
     const {labels} = useLabelsStore();
 
@@ -66,7 +70,14 @@ export default function NewTime(){
     }
 
     function save(){
-        console.log({label, time})
+
+        if (time === 0 || label === 'none') return null;
+
+        createTime(token, time, label)
+            .then(() => {
+                reset();
+            })
+            .catch(console.log)
     }
 
     return (
