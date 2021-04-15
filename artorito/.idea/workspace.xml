@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="contex disappear after click">
-      <change beforePath="$PROJECT_DIR$/src/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dashboard.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add event listener">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,14 +111,7 @@
       <workItem from="1618408532139" duration="2474000" />
       <workItem from="1618463063232" duration="2025000" />
       <workItem from="1618466206763" duration="1144000" />
-      <workItem from="1618484058112" duration="300000" />
-    </task>
-    <task id="LOCAL-00119" summary="add timer">
-      <created>1618309382113</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1618309382113</updated>
+      <workItem from="1618484058112" duration="1282000" />
     </task>
     <task id="LOCAL-00120" summary="remove big button">
       <created>1618309517259</created>
@@ -456,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618467280389</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="add event listener">
+      <created>1618484381247</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1618484381248</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +477,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="time manager style" />
     <MESSAGE value="hidden animation" />
     <MESSAGE value="states and icons" />
     <MESSAGE value="time manager done" />
@@ -502,6 +501,7 @@
     <MESSAGE value="add socket connection" />
     <MESSAGE value="more things" />
     <MESSAGE value="contex disappear after click" />
-    <option name="LAST_COMMIT_MESSAGE" value="contex disappear after click" />
+    <MESSAGE value="add event listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="add event listener" />
   </component>
 </project>

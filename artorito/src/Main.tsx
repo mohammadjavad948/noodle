@@ -13,7 +13,7 @@ import {ENDPOINT} from "./env";
 export default function Main() {
 
     const {token} = useTokenStore();
-    const {setLabels} = useLabelsStore();
+    const {setLabels, newLabel, setLabel} = useLabelsStore();
 
     useEffect(() => {
         allLabels(token)
@@ -35,6 +35,14 @@ export default function Main() {
         socket.on('disconnect', () => {
             console.log('%c [WS]%c disconnected', 'color: purple', 'color: red')
         })
+
+        socket.on('new-label', (data: any) => {
+            newLabel(data);
+        });
+
+        socket.on('update-label', (data: any) => {
+            setLabel(data._id, data);
+        });
 
         socket.onAny(console.log);
 
