@@ -105,42 +105,6 @@ app.post('/time/new', authMiddleware, async (req, res) => {
 })
 
 
-app.get('/label/:id', authMiddleware, async (req, res) => {
-
-    const {id} = req.params;
-
-    const label = await Label.findOne({_id: id}).populate('time').exec();
-
-    return res.send({
-        label
-    })
-});
-
-
-
-app.post('/time', authMiddleware, async (req, res) => {
-    // @ts-ignore
-    const user = req.user;
-
-    const {label, time} = req.body;
-
-
-    const savedTime = await Time.create({
-        time
-    });
-
-    const savedLabel = await Label.findOne({_id: label});
-
-    savedLabel.time.push(savedTime._id)
-
-    await user.save();
-
-    return res.send({
-        label
-    })
-});
-
-
 
 connect(process.env.DB || 'mongodb://admin:secret@localhost:27017/noodle?authSource=admin', {useUnifiedTopology: true, useNewUrlParser: true}, () => {
     console.log('connected to db')
