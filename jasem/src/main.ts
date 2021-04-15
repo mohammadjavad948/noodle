@@ -14,6 +14,14 @@ app.use(cors({
     origin: "*"
 }));
 
+
+const server = app.listen(process.env.PORT || 3000, () => {
+    console.log('server is running')
+});
+
+const IO = socketIo(server);
+
+
 app.options('*', cors())
 
 app.get('/status', (req, res) => {
@@ -110,9 +118,3 @@ app.post('/time/new', authMiddleware, async (req, res) => {
 connect(process.env.DB || 'mongodb://admin:secret@localhost:27017/noodle?authSource=admin', {useUnifiedTopology: true, useNewUrlParser: true}, () => {
     console.log('connected to db')
 })
-
-const server = app.listen(process.env.PORT || 3000, () => {
-    console.log('server is running')
-});
-
-const IO = socketIo(server);
