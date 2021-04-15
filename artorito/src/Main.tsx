@@ -36,6 +36,7 @@ export default function Main() {
             console.log('%c [WS]%c disconnected', 'color: purple', 'color: red')
         })
 
+        socket.onAny(console.log);
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

@@ -30,11 +30,10 @@ function NewLabelCard(){
     const {token} = useTokenStore();
 
     function save(){
-        console.log({name, color});
 
         createLabel(token, name, color)
             .then((res: any) => {
-                console.log(res)
+
             })
             .catch(console.log)
     }
