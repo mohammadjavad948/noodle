@@ -14,9 +14,11 @@ export default function DashboardCard(props: DashboardCardI) {
     const theme = useTheme();
 
     const [mouse, setMouse] = useState({open: false, x: 0, y: 0});
+    const [chartData, setChartData] = useState([0, 0, 0, 0, 0, 0, 0]);
 
     useEffect(() => {
         buildChart();
+        createChartData();
     });
 
     function buildChart() {
@@ -31,7 +33,7 @@ export default function DashboardCard(props: DashboardCardI) {
                     label: props.data.name,
                     fill: false,
                     borderColor: props.data.color,
-                    data: createChartData()
+                    data: chartData
                 }]
             },
             options: {
@@ -103,7 +105,7 @@ export default function DashboardCard(props: DashboardCardI) {
             }
         }
 
-        return final;
+        setChartData(final);
     }
 
     function contextM(e: any){
