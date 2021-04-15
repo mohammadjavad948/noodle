@@ -7,6 +7,8 @@ import {useTokenStore} from "./stores/TokenStore";
 import {useLabelsStore} from "./stores/LabelsStore";
 import NewTime from "./NewTime";
 import TimeManager from "./components/TimeManager";
+import {io} from 'socket.io-client';
+import {ENDPOINT} from "./env";
 
 export default function Main() {
 
@@ -18,7 +20,19 @@ export default function Main() {
             .then((res: any) => {
                 setLabels(res.data.labels);
             })
-            .catch(console.log)
+            .catch(console.log);
+
+        const socket = io(ENDPOINT, {
+            auth: {
+                token
+            }
+        });
+
+        socket.on('connect', () => {
+            console.log('%c [WS]%c authenticated to socket server', 'color: purple', 'color: black')
+        })
+
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
