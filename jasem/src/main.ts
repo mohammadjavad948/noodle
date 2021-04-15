@@ -1,7 +1,7 @@
 import * as express from 'express';
 import {connect} from "mongoose";
 import * as bodyParser from "body-parser";
-import {authMiddleware, login, register} from "./auth";
+import {authMiddleware, login, register, verifySocket} from "./auth";
 import {Label} from "./mongo/Label";
 import {Time} from "./mongo/Time";
 require('dotenv').config();
@@ -19,8 +19,19 @@ const server = app.listen(process.env.PORT || 3000, () => {
     console.log('server is running')
 });
 
-const IO = socketIo(server);
+const IOServer = socketIo(server, {
+    cors: {
+        origin: "*",
+        methods: ["GET", "POST"]
+    }
+});
 
+const io = IOServer
+    .use(verifySocket)
+    .on('connection', (socket) => {
+
+        console.log('someone connected' + socket.decoded)
+    })
 
 app.options('*', cors())
 
