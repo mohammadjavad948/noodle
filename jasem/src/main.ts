@@ -76,6 +76,8 @@ app.post('/label', authMiddleware, async (req, res) => {
 
     await user.save();
 
+    io.in(user._id).emit('new-label', label);
+
     return res.send({
         label
     })
@@ -83,6 +85,8 @@ app.post('/label', authMiddleware, async (req, res) => {
 
 
 app.put('/label/:id', authMiddleware, async (req, res) => {
+    // @ts-ignore
+    const user = req.user;
 
     const {name, color} = req.body;
 
@@ -91,6 +95,10 @@ app.put('/label/:id', authMiddleware, async (req, res) => {
     const label = await Label.findOne({_id: id}).update({
         color, name
     });
+
+    const emitLabel = await Label.findOne({_id: id}).populate('time').exec();
+
+    io.in(user._id).emit('update-label', emitLabel);
 
     return res.send({
         label
@@ -110,6 +118,8 @@ app.get('/label/:id', authMiddleware, async (req, res) => {
 });
 
 app.post('/time/new', authMiddleware, async (req, res) => {
+    // @ts-ignore
+    const user = req.user;
 
     const {label, time} = req.body;
 
@@ -122,6 +132,10 @@ app.post('/time/new', authMiddleware, async (req, res) => {
     createdLabel.time.push(createdTime._id);
 
     await createdLabel.save();
+
+    const emitLabel = await Label.findOne({_id: label}).populate('time').exec();
+
+    io.in(user._id).emit('update-label', emitLabel);
 
     res.send({
         time: createdTime
