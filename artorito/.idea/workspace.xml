@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add save functionality">
-      <change beforePath="$PROJECT_DIR$/src/NewTime.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTime.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="tf">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,14 +108,7 @@
       <workItem from="1618376904911" duration="6415000" />
       <workItem from="1618401199245" duration="3966000" />
       <workItem from="1618408532139" duration="2474000" />
-      <workItem from="1618463063232" duration="1606000" />
-    </task>
-    <task id="LOCAL-00114" summary="create NewTime.module.css">
-      <created>1618306617807</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1618306617809</updated>
+      <workItem from="1618463063232" duration="2025000" />
     </task>
     <task id="LOCAL-00115" summary="import style">
       <created>1618306654189</created>
@@ -453,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618464427320</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="save done">
+      <created>1618464980836</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1618464980836</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,8 +474,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="import animation" />
-    <MESSAGE value="import dep" />
     <MESSAGE value="create time manager css" />
     <MESSAGE value="ignore idea files" />
     <MESSAGE value="import style" />
@@ -499,6 +497,8 @@
     <MESSAGE value="create contextmenu var" />
     <MESSAGE value="create time endpoint" />
     <MESSAGE value="add save functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="add save functionality" />
+    <MESSAGE value="save done" />
+    <MESSAGE value="tf" />
+    <option name="LAST_COMMIT_MESSAGE" value="tf" />
   </component>
 </project>

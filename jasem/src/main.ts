@@ -6,6 +6,7 @@ import {Label} from "./mongo/Label";
 import {Time} from "./mongo/Time";
 require('dotenv').config();
 import * as cors from 'cors';
+const socketIo = require('socket.io');
 
 const app = express();
 app.use(bodyParser.json());
@@ -110,6 +111,6 @@ connect(process.env.DB || 'mongodb://admin:secret@localhost:27017/noodle?authSou
     console.log('connected to db')
 })
 
-app.listen(process.env.PORT || 3000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
     console.log('server is running')
 })
