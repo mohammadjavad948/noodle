@@ -31,7 +31,7 @@ export default function DashboardCard(props: DashboardCardI) {
                     label: props.data.name,
                     fill: false,
                     borderColor: props.data.color,
-                    data: getRandomNumbers(7, 100)
+                    data: createChartData()
                 }]
             },
             options: {
@@ -55,19 +55,52 @@ export default function DashboardCard(props: DashboardCardI) {
                 },
                 legend: {
                     display: false
-                }
+                },
+                animation: false
             }
         })
     }
 
-    function getRandomNumbers(count: number, range: number): number[] {
-        let all: number[] = [];
+    function sortByDate(data: any){
+        let finalObj = {}
+        data.forEach((games: any) => {
+            const date = games.date.split('T')[0]
+            // @ts-ignore
+            if (finalObj[date]) {
+                // @ts-ignore
+                finalObj[date].push(games);
+            } else {
+                // @ts-ignore
+                finalObj[date] = [games];
+            }
+        });
 
-        for (let i = 0; i < count; i++){
-            all.push(Math.floor(Math.random() * range));
+        return finalObj;
+    }
+
+    function createChartData(){
+        let final = [];
+        const sorted = sortByDate(props.data.time);
+
+        for (let i = 0; i < 7; i++){
+            let date: any = new Date(new Date().setDate(new Date().getDate() - i))
+
+            date = date.toISOString().split('T')[0]
+
+            // @ts-ignore
+            if (sorted[date]){
+                // @ts-ignore
+                const sum = sorted[date].reduce((a: any, b: any) => {
+                    return a + b.time
+                }, 0)
+
+                final.push(sum);
+            }else {
+                final.push(0);
+            }
         }
 
-        return all;
+        return final;
     }
 
     function contextM(e: any){
