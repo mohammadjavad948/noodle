@@ -30,6 +30,14 @@ export function createLabel(token: string, name: string, color: string){
     });
 }
 
+export function removeLabel(token: string, id: string){
+    return axios.delete(ENDPOINT + '/label/' + id,  {
+        headers: {
+            token
+        }
+    });
+}
+
 export function createTime(token: string, time: number, label: string){
     return axios.post(ENDPOINT + '/time/new', {time, label},  {
         headers: {
