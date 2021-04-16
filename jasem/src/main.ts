@@ -142,7 +142,32 @@ app.post('/time/new', authMiddleware, async (req, res) => {
     res.send({
         time: createdTime
     })
-})
+});
+
+app.delete('/label/:id', authMiddleware, async (req, res) => {
+    // @ts-ignore
+    const user = req.user;
+
+    const {id} = req.params;
+
+    const label = await Label.findById(id);
+
+    await Time.find({_id: {$in: label.time}}).remove();
+
+    const index = user.label.findIndex(e => e._id === id);
+
+    user.label.splice(index, 1);
+
+    await user.save();
+
+    io.in(user.username).emit('remove-label', label._id);
+
+    await label.remove();
+
+    return res.send({
+        ok: true
+    })
+});
 
 
 

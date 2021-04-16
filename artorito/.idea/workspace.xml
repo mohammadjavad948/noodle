@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add more item to context">
-      <change beforePath="$PROJECT_DIR$/src/components/LabelCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LabelCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add some icon" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,14 +109,7 @@
       <workItem from="1618463063232" duration="2025000" />
       <workItem from="1618466206763" duration="1144000" />
       <workItem from="1618484058112" duration="4321000" />
-      <workItem from="1618549542553" duration="1355000" />
-    </task>
-    <task id="LOCAL-00128" summary="create interval Store">
-      <created>1618335776493</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1618335776494</updated>
+      <workItem from="1618549542553" duration="1739000" />
     </task>
     <task id="LOCAL-00129" summary="create time Store">
       <created>1618335890512</created>
@@ -457,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618550627083</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="add some icon">
+      <created>1618551031289</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1618551031290</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +475,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="color" />
     <MESSAGE value="add contexmenu event" />
     <MESSAGE value="menu" />
     <MESSAGE value="beautiful menu" />
@@ -503,6 +499,7 @@
     <MESSAGE value="remove chart" />
     <MESSAGE value="remove unused import" />
     <MESSAGE value="add more item to context" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more item to context" />
+    <MESSAGE value="add some icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some icon" />
   </component>
 </project>
