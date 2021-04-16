@@ -62,6 +62,9 @@ export default function Main() {
                     <Route path="/new">
                         <NewTime />
                     </Route>
+                    <Route path="/label/:id">
+                        hmm
+                    </Route>
                     <Route path="/">
                         <Dashboard />
                     </Route>
