@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {Card, CardContent, Icon, Typography, useTheme} from "@material-ui/core";
 import ContextMenu from "./Menu";
+import {removeLabel} from "../api/api";
+import {useTokenStore} from "../stores/TokenStore";
 
 interface DashboardCardI {
     data: any
@@ -12,6 +14,7 @@ export default function DashboardCard(props: DashboardCardI) {
 
     const [mouse, setMouse] = useState({open: false, x: 0, y: 0});
     const [sum, setSum] = useState('');
+    const {token} = useTokenStore();
 
     useEffect(() => {
         createSum();
@@ -68,7 +71,10 @@ export default function DashboardCard(props: DashboardCardI) {
 
     function remove(){
         hideContext()
-        console.log('remove')
+
+        removeLabel(token, props.data._id)
+            .then(console.log)
+            .catch(console.log)
     }
 
     const contextMenu = [
