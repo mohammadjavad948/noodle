@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Card, CardContent, Typography, useTheme} from "@material-ui/core";
+import {Card, CardContent, Icon, Typography, useTheme} from "@material-ui/core";
 import ContextMenu from "./Menu";
 
 interface DashboardCardI {
@@ -74,15 +74,18 @@ export default function DashboardCard(props: DashboardCardI) {
     const contextMenu = [
         {
             title: 'show graph',
-            click: () => {}
+            click: () => {},
+            icon: <Icon>show_chart</Icon>
         },
         {
             title: 'view',
-            click: () => {}
+            click: () => {},
+            icon: <Icon>visibility</Icon>
         },
         {
             title: 'remove',
-            click: remove
+            click: remove,
+            icon: <Icon>delete</Icon>
         }
     ]
 

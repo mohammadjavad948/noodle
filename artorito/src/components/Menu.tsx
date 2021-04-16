@@ -7,7 +7,8 @@ interface Props{
     hide: () => void
     content: {
         title: string | React.ElementType
-        click: () => any
+        click: () => any,
+        icon: any
     }[]
 }
 
@@ -46,10 +47,11 @@ export default function ContextMenu(props: Props){
                 borderRadius: '8px',
                 boxShadow: '0 0 3px 0 #9c9c9c',
                 background: theme.palette.background.default,
-                padding: '8px 0'
+                padding: '8px 0',
+                zIndex: 99
             }} ref={ref}>
             {
-                props.content.map((cont, index) => <MenuItem key={index} onClick={cont.click}>{cont.title}</MenuItem>)
+                props.content.map((cont, index) => <MenuItem style={{gap: '5px'}} key={index} onClick={cont.click}>{cont.icon}  {cont.title}</MenuItem>)
             }
         </div>
     )

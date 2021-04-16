@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="remove unused import">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add more item to context">
       <change beforePath="$PROJECT_DIR$/src/components/LabelCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LabelCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +112,7 @@
       <workItem from="1618463063232" duration="2025000" />
       <workItem from="1618466206763" duration="1144000" />
       <workItem from="1618484058112" duration="4321000" />
-      <workItem from="1618549542553" duration="1019000" />
-    </task>
-    <task id="LOCAL-00127" summary="add image navbar">
-      <created>1618319619082</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1618319619083</updated>
+      <workItem from="1618549542553" duration="1355000" />
     </task>
     <task id="LOCAL-00128" summary="create interval Store">
       <created>1618335776493</created>
@@ -457,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618550191629</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="add more item to context">
+      <created>1618550627083</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1618550627083</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +478,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add select" />
     <MESSAGE value="color" />
     <MESSAGE value="add contexmenu event" />
     <MESSAGE value="menu" />
@@ -503,6 +502,7 @@
     <MESSAGE value="add full sum" />
     <MESSAGE value="remove chart" />
     <MESSAGE value="remove unused import" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unused import" />
+    <MESSAGE value="add more item to context" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more item to context" />
   </component>
 </project>
