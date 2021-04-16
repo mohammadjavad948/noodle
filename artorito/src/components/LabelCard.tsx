@@ -93,7 +93,7 @@ export default function DashboardCard(props: DashboardCardI) {
         <Card
             variant={"outlined"}
             style={{background: theme.palette.background.default}}
-            className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3"
+            className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3 d-flex align-items-center justify-content-evenly"
             onContextMenu={contextM}
         >
             <CardContent>
