@@ -73,16 +73,10 @@ export default function DashboardCard(props: DashboardCardI) {
         hideContext()
 
         removeLabel(token, props.data._id)
-            .then(console.log)
             .catch(console.log)
     }
 
     const contextMenu = [
-        {
-            title: 'show graph',
-            click: () => {},
-            icon: <Icon>show_chart</Icon>
-        },
         {
             title: 'view',
             click: () => {},
