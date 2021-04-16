@@ -13,7 +13,7 @@ import {ENDPOINT} from "./env";
 export default function Main() {
 
     const {token} = useTokenStore();
-    const {setLabels, newLabel, setLabel} = useLabelsStore();
+    const {setLabels, newLabel, setLabel, removeLabel} = useLabelsStore();
 
     useEffect(() => {
         allLabels(token)
@@ -42,6 +42,10 @@ export default function Main() {
 
         socket.on('update-label', (data: any) => {
             setLabel(data._id, data);
+        });
+
+        socket.on('remove-label', (data: any) => {
+            removeLabel(data);
         });
 
         socket.onAny(console.log);

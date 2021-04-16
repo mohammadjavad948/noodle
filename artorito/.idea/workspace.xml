@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add some icon">
-      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add remove label">
+      <change beforePath="$PROJECT_DIR$/src/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,21 +112,7 @@
       <workItem from="1618466206763" duration="1144000" />
       <workItem from="1618484058112" duration="4321000" />
       <workItem from="1618549542553" duration="1739000" />
-      <workItem from="1618557174726" duration="691000" />
-    </task>
-    <task id="LOCAL-00129" summary="create time Store">
-      <created>1618335890512</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1618335890512</updated>
-    </task>
-    <task id="LOCAL-00130" summary="create start store">
-      <created>1618335999523</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1618335999523</updated>
+      <workItem from="1618557174726" duration="1570000" />
     </task>
     <task id="LOCAL-00131" summary="bug fix">
       <created>1618336065152</created>
@@ -457,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618551031290</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="add removeLabel method">
+      <created>1618557883074</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1618557883074</updated>
+    </task>
+    <task id="LOCAL-00179" summary="add remove label">
+      <created>1618558109494</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1618558109494</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,8 +478,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add contexmenu event" />
-    <MESSAGE value="menu" />
     <MESSAGE value="beautiful menu" />
     <MESSAGE value="contexmenu with content" />
     <MESSAGE value="add menu" />
@@ -503,6 +501,8 @@
     <MESSAGE value="remove unused import" />
     <MESSAGE value="add more item to context" />
     <MESSAGE value="add some icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some icon" />
+    <MESSAGE value="add removeLabel method" />
+    <MESSAGE value="add remove label" />
+    <option name="LAST_COMMIT_MESSAGE" value="add remove label" />
   </component>
 </project>
