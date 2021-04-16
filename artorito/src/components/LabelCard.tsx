@@ -73,6 +73,14 @@ export default function DashboardCard(props: DashboardCardI) {
 
     const contextMenu = [
         {
+            title: 'show graph',
+            click: () => {}
+        },
+        {
+            title: 'view',
+            click: () => {}
+        },
+        {
             title: 'remove',
             click: remove
         }
