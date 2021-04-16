@@ -82,7 +82,7 @@ function Navbar(){
             <AppBar position="static" color={"transparent"}>
                 <Toolbar>
                     <Avatar src={image} variant={"rounded"} style={{marginRight: 10, backgroundColor: green[500]}} />
-                    <Typography variant="h6" className={classes.title}>
+                    <Typography variant="h6" className={classes.title} onClick={dashboard}>
                         Noodle
                     </Typography>
                     <IconButton onClick={changeTheme}>
