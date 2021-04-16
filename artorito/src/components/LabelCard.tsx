@@ -3,6 +3,7 @@ import {Card, CardContent, Icon, Typography, useTheme} from "@material-ui/core";
 import ContextMenu from "./Menu";
 import {removeLabel} from "../api/api";
 import {useTokenStore} from "../stores/TokenStore";
+import {useHistory} from "react-router-dom";
 
 interface DashboardCardI {
     data: any
@@ -15,6 +16,8 @@ export default function DashboardCard(props: DashboardCardI) {
     const [mouse, setMouse] = useState({open: false, x: 0, y: 0});
     const [sum, setSum] = useState('');
     const {token} = useTokenStore();
+
+    const history = useHistory();
 
     useEffect(() => {
         createSum();
@@ -76,10 +79,14 @@ export default function DashboardCard(props: DashboardCardI) {
             .catch(console.log)
     }
 
+    function gotoPage(){
+        history.push('/label/' + props.data._id);
+    }
+
     const contextMenu = [
         {
             title: 'view',
-            click: () => {},
+            click: gotoPage,
             icon: <Icon>visibility</Icon>
         },
         {
@@ -95,6 +102,7 @@ export default function DashboardCard(props: DashboardCardI) {
             style={{background: theme.palette.background.default}}
             className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3 d-flex align-items-center justify-content-evenly"
             onContextMenu={contextM}
+            onClick={gotoPage}
         >
             <CardContent>
                 <Typography style={{textAlign: 'center', fontSize: '20px'}}>

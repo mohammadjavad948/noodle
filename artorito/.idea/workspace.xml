@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add some flex">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add one more route">
+      <change beforePath="$PROJECT_DIR$/src/components/LabelCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LabelCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +112,7 @@
       <workItem from="1618466206763" duration="1144000" />
       <workItem from="1618484058112" duration="4321000" />
       <workItem from="1618549542553" duration="1739000" />
-      <workItem from="1618557174726" duration="2476000" />
-    </task>
-    <task id="LOCAL-00134" summary="user can see time in navbar">
-      <created>1618378478780</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1618378478781</updated>
+      <workItem from="1618557174726" duration="2930000" />
     </task>
     <task id="LOCAL-00135" summary="little changes">
       <created>1618382400875</created>
@@ -457,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618559053564</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="add one more route">
+      <created>1618561644158</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1618561644158</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +478,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="bug fix" />
     <MESSAGE value="create contextmenu var" />
     <MESSAGE value="create time endpoint" />
     <MESSAGE value="add save functionality" />
@@ -503,6 +502,7 @@
     <MESSAGE value="event listener for remove label" />
     <MESSAGE value="remove show graph" />
     <MESSAGE value="add some flex" />
-    <option name="LAST_COMMIT_MESSAGE" value="add some flex" />
+    <MESSAGE value="add one more route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add one more route" />
   </component>
 </project>
