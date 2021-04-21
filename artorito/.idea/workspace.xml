@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add gotopage method">
-      <change beforePath="$PROJECT_DIR$/src/components/LabelCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LabelCard.tsx" afterDir="false" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add destiny">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/App.tsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/node_modules/@material-ui/core/colors/green.d.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1phGGU5Rqn83bmsQxDoiwQRBi4y" />
@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -44,6 +44,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -112,21 +113,12 @@
       <workItem from="1618466206763" duration="1144000" />
       <workItem from="1618484058112" duration="4321000" />
       <workItem from="1618549542553" duration="1739000" />
-      <workItem from="1618557174726" duration="3404000" />
-    </task>
-    <task id="LOCAL-00136" summary="remove gap">
-      <created>1618383014782</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1618383014782</updated>
-    </task>
-    <task id="LOCAL-00137" summary="add time manager">
-      <created>1618383142274</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1618383142274</updated>
+      <workItem from="1618557174726" duration="5088000" />
+      <workItem from="1618588274093" duration="423000" />
+      <workItem from="1618657169921" duration="88000" />
+      <workItem from="1618981407584" duration="193000" />
+      <workItem from="1618982104875" duration="22000" />
+      <workItem from="1618997171090" duration="126000" />
     </task>
     <task id="LOCAL-00138" summary="import animation">
       <created>1618383188268</created>
@@ -457,7 +449,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618562099979</updated>
     </task>
-    <option name="localTasksCounter" value="185" />
+    <task id="LOCAL-00185" summary="add click for noodle">
+      <created>1618562596445</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1618562596445</updated>
+    </task>
+    <task id="LOCAL-00186" summary="add destiny">
+      <created>1618565041434</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1618565041434</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,8 +484,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="create time endpoint" />
-    <MESSAGE value="add save functionality" />
     <MESSAGE value="save done" />
     <MESSAGE value="tf" />
     <MESSAGE value="add socket io" />
@@ -503,6 +507,8 @@
     <MESSAGE value="add some flex" />
     <MESSAGE value="add one more route" />
     <MESSAGE value="add gotopage method" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gotopage method" />
+    <MESSAGE value="add click for noodle" />
+    <MESSAGE value="add destiny" />
+    <option name="LAST_COMMIT_MESSAGE" value="add destiny" />
   </component>
 </project>
