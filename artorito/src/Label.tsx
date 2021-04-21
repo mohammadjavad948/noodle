@@ -1,6 +1,7 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
 import {useLabelsStore} from "./stores/LabelsStore";
+import style from './Label.module.css';
 
 export default function Label(){
 
