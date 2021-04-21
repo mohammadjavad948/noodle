@@ -31,7 +31,7 @@ export default function Label(){
                 </svg>
                 <h1>{label?.name ?? "not found"}</h1>
             </div>
-            <div>
+            <div className={style.times}>
                 {label?.time.map((el, index) => <div key={index}>{msToTime(el.time)}</div>)}
             </div>
         </div>
