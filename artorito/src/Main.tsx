@@ -9,6 +9,7 @@ import NewTime from "./NewTime";
 import TimeManager from "./components/TimeManager";
 import {io} from 'socket.io-client';
 import {ENDPOINT} from "./env";
+import Label from "./Label";
 
 export default function Main() {
 
@@ -63,7 +64,7 @@ export default function Main() {
                         <NewTime />
                     </Route>
                     <Route path="/label/:id">
-                        hmm
+                        <Label />
                     </Route>
                     <Route path="/">
                         <Dashboard />
