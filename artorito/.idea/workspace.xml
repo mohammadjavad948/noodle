@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add title class">
-      <change beforePath="$PROJECT_DIR$/src/Label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Label.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add color rect svg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,14 +116,7 @@
       <workItem from="1618657169921" duration="88000" />
       <workItem from="1618981407584" duration="193000" />
       <workItem from="1618982104875" duration="22000" />
-      <workItem from="1618997171090" duration="995000" />
-    </task>
-    <task id="LOCAL-00143" summary="style">
-      <created>1618383522786</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1618383522786</updated>
+      <workItem from="1618997171090" duration="1321000" />
     </task>
     <task id="LOCAL-00144" summary="time manager style">
       <created>1618383859352</created>
@@ -463,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618998092121</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="add color rect svg">
+      <created>1618998215737</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1618998215738</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +482,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="contex disappear after click" />
     <MESSAGE value="add event listener" />
     <MESSAGE value="add event listeners for label" />
     <MESSAGE value="view chart" />
@@ -509,6 +506,7 @@
     <MESSAGE value="add label module" />
     <MESSAGE value="import label module" />
     <MESSAGE value="add title class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add title class" />
+    <MESSAGE value="add color rect svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="add color rect svg" />
   </component>
 </project>
