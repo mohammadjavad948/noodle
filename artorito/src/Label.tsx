@@ -12,7 +12,7 @@ export default function Label(){
 
     return (
         <div>
-            <div>
+            <div className={style.title}>
                 <h1>{label?.name ?? "not found"}</h1>
             </div>
         </div>
