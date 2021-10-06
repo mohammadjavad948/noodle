@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         title: {
             flexGrow: 1,
+            cursor: 'pointer',
         },
     }),
 );
@@ -81,7 +82,7 @@ function Navbar(){
         <div className={classes.root}>
             <AppBar position="static" color={"transparent"}>
                 <Toolbar>
-                    <Avatar src={image} variant={"rounded"} style={{marginRight: 10, backgroundColor: green[500]}} />
+                    <Avatar src={image} variant={"rounded"} style={{marginRight: 10}} />
                     <Typography variant="h6" className={classes.title} onClick={dashboard}>
                         Noodle
                     </Typography>
