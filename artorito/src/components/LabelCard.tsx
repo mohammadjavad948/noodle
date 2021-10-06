@@ -100,7 +100,7 @@ export default function DashboardCard(props: DashboardCardI) {
         <div className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3">
             <Card
                 variant={"outlined"}
-                style={{background: theme.palette.background.default}}
+                style={{background: theme.palette.background.default, borderColor: props.data.color}}
                 className="d-flex align-items-center justify-content-evenly"
                 onContextMenu={contextM}
                 onClick={gotoPage}
