@@ -97,20 +97,22 @@ export default function DashboardCard(props: DashboardCardI) {
     ]
 
     return (
-        <Card
-            variant={"outlined"}
-            style={{background: theme.palette.background.default}}
-            className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3 d-flex align-items-center justify-content-evenly"
-            onContextMenu={contextM}
-            onClick={gotoPage}
-        >
-            <CardContent>
-                <Typography style={{textAlign: 'center', fontSize: '20px'}}>
-                    {props.data.name}
-                </Typography>
-                <Typography style={{textAlign: 'center'}}>{sum}</Typography>
-            </CardContent>
-            {mouse.open ? <ContextMenu content={contextMenu} hide={hideContext} {...mouse}/> : ''}
-        </Card>
+        <div className="col-12 col-sm-12 col-md-5 col-lg-3 col-xxl-3">
+            <Card
+                variant={"outlined"}
+                style={{background: theme.palette.background.default}}
+                className="d-flex align-items-center justify-content-evenly"
+                onContextMenu={contextM}
+                onClick={gotoPage}
+            >
+                <CardContent>
+                    <Typography style={{textAlign: 'center', fontSize: '20px'}}>
+                        {props.data.name}
+                    </Typography>
+                    <Typography style={{textAlign: 'center'}}>{sum}</Typography>
+                </CardContent>
+                {mouse.open ? <ContextMenu content={contextMenu} hide={hideContext} {...mouse}/> : ''}
+            </Card>
+        </div>
     )
 }

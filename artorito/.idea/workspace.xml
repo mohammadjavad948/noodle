@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="add color rect svg" />
+    <list default="true" id="d3059441-ac0a-4b40-aeb8-6ba242b386d8" name="Default Changelist" comment="time finished">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../my-website" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -116,21 +118,8 @@
       <workItem from="1618657169921" duration="88000" />
       <workItem from="1618981407584" duration="193000" />
       <workItem from="1618982104875" duration="22000" />
-      <workItem from="1618997171090" duration="1321000" />
-    </task>
-    <task id="LOCAL-00144" summary="time manager style">
-      <created>1618383859352</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1618383859353</updated>
-    </task>
-    <task id="LOCAL-00145" summary="hidden animation">
-      <created>1618384240442</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1618384240442</updated>
+      <workItem from="1618997171090" duration="1862000" />
+      <workItem from="1619008694527" duration="23000" />
     </task>
     <task id="LOCAL-00146" summary="states and icons">
       <created>1618384545109</created>
@@ -461,7 +450,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618998215738</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="add times">
+      <created>1618998630451</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1618998630451</updated>
+    </task>
+    <task id="LOCAL-00194" summary="time finished">
+      <created>1618998709263</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1618998709263</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,8 +485,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="add event listener" />
-    <MESSAGE value="add event listeners for label" />
     <MESSAGE value="view chart" />
     <MESSAGE value="remove tooltip" />
     <MESSAGE value="state for chart" />
@@ -507,6 +508,8 @@
     <MESSAGE value="import label module" />
     <MESSAGE value="add title class" />
     <MESSAGE value="add color rect svg" />
-    <option name="LAST_COMMIT_MESSAGE" value="add color rect svg" />
+    <MESSAGE value="add times" />
+    <MESSAGE value="time finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="time finished" />
   </component>
 </project>
