@@ -53,6 +53,13 @@ function NewLabelCard(){
                         onChange={(c) => setColor(c.hex)}
                         triangle={"hide"}
                         className={"color"}
+                        styles={{
+                            default: {
+                                card: {
+                                    background: theme.palette.background.default
+                                }
+                            }
+                        }}
                     />
                 </div>
                 <Button variant="contained" color="primary" onClick={save} className="mt-2 mb-2">
